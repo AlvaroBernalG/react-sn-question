@@ -89,7 +89,7 @@ export default class Toggles extends React.Component {
   }
 
   render() {
-    const { questions, questionTitle, disable } = this.props;
+    const { questions, questionTitle, disable, resolutionMessage } = this.props;
     return (
       <div className={this.getMainWrapperClasses(questions)}>
         <h1 className="toggles__title">{questionTitle}</h1>
@@ -105,7 +105,7 @@ export default class Toggles extends React.Component {
             switchIndex={index}
           />
         ))}
-        <p className="toggles__result">{this.props.resolutionMessage}</p>
+        <p className="toggles__result">{resolutionMessage}</p>
       </div>
     );
   }
