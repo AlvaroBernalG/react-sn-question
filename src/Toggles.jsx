@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './Toggles.scss'
+import React from "react";
+import PropTypes from "prop-types";
+import "./Toggles.scss";
 import TogglesSwitch from "./TogglesSwitch";
 
 export default class Toggles extends React.Component {
@@ -23,31 +23,31 @@ export default class Toggles extends React.Component {
         )
       })
     )
-  }
+  };
 
   static defaultProps = {
     onChange: undefined,
     classStates: undefined,
     disable: false,
-    questionTitle: '',
+    questionTitle: "",
     questions: [],
-    resolutionMessage: ''
-  }
+    resolutionMessage: ""
+  };
 
-  static defaultClassStates = ['failure', 'hot', 'medium', 'almost', 'success']
+  static defaultClassStates = ["failure", "hot", "medium", "almost", "success"];
 
   static computeScore = questions =>
     questions.reduce(
       (acc, question) => acc + (question.selected === question.correct ? 1 : 0),
       0
-    )
+    );
 
   static computeDefaultClasses(classes, nthQuestions) {
     return [
       classes[0],
       ...classes.slice(1, nthQuestions),
       classes[classes.length - 1]
-    ]
+    ];
   }
 
   static getDerivedStateFromProps(props, prevState) {
@@ -56,7 +56,7 @@ export default class Toggles extends React.Component {
     if (props.classStates) {
       return {
         classStates: props.classStates
-      }
+      };
     }
     // if classes has not been defined from parent and the state has not
     // been initialized:
@@ -66,47 +66,47 @@ export default class Toggles extends React.Component {
           Toggles.defaultClassStates,
           props.questions.length
         )
-      }
+      };
     }
-    return null
+    return null;
   }
 
   state = {
     classStates: []
-  }
+  };
 
-  getClasses(questions) {
-    const computedScore = Toggles.computeScore(questions)
-    const finalClass = this.state.classStates[computedScore]
-    const classes = ['toggles', `toggles--${finalClass}`].join(' ')
+  getMainWrapperClasses(questions) {
+    const computedScore = Toggles.computeScore(questions);
+    const finalClass = this.state.classStates[computedScore];
+    const classes = ["toggles", `toggles--${finalClass}`].join(" ");
     return classes;
   }
 
   changeHandler(selectedValue, answerIndex, questionIndex) {
-    if (this.props.onChange) { this.props.onChange(selectedValue, answerIndex, questionIndex) }
+    if (this.props.onChange) {
+      this.props.onChange(selectedValue, answerIndex, questionIndex);
+    }
   }
 
   render() {
-    const { questions, questionTitle, disable } = this.props
+    const { questions, questionTitle, disable } = this.props;
     return (
-      <div className={this.getClasses(questions)}>
-        <h1 className='toggles__title'>
-          {questionTitle}
-        </h1>
+      <div className={this.getMainWrapperClasses(questions)}>
+        <h1 className="toggles__title">{questionTitle}</h1>
         {questions.map((question, index) => (
-          <TogglesSwitch 
+          <TogglesSwitch
             {...question}
             key={question.id}
             disable={disable}
             options={question.answers}
-            changeHandler={(value, answerIndex, questionIndex) => 
-              this.changeHandler(value, answerIndex, questionIndex)} 
-            switchIndex={index} />
+            changeHandler={(value, answerIndex, questionIndex) =>
+              this.changeHandler(value, answerIndex, questionIndex)
+            }
+            switchIndex={index}
+          />
         ))}
-        <p className='toggles__result'>
-          {this.props.resolutionMessage}
-        </p>
+        <p className="toggles__result">{this.props.resolutionMessage}</p>
       </div>
-    )
+    );
   }
 }

@@ -1,7 +1,7 @@
 export const quiz = {
-  "id": 33,
-  "questionTitle": "An animal cell contains:",
-  "questions": [
+  id: 33,
+  questionTitle: "An animal cell contains:",
+  questions: [
     {
       id: 0,
       correct: 0,
@@ -134,12 +134,12 @@ export const quiz2 = {
       ]
     }
   ]
-}
+};
 
 export const test = {
-  "id": 33,
-  "questionTitle": "An animal cell contains:",
-  "questions": [
+  id: 33,
+  questionTitle: "An animal cell contains:",
+  questions: [
     {
       id: 0,
       correct: 0,
