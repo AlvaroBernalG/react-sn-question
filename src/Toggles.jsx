@@ -52,6 +52,7 @@ export default class Toggles extends React.Component {
 
   static getDerivedStateFromProps(props, prevState) {
     // if props.classStates is being defined from the parent
+    // initialize state with the data.
     if (props.classStates) {
       return {
         classStates: props.classStates
@@ -86,7 +87,7 @@ export default class Toggles extends React.Component {
   }
 
   render() {
-    const { questions, questionTitle } = this.props
+    const { questions, questionTitle, disabled } = this.props
     return (
       <div className={this.getClasses(questions)}>
         <h1 className='title'>
@@ -95,6 +96,7 @@ export default class Toggles extends React.Component {
         {questions.map((question, index) => (
           <TogglesSwitch 
             {...question}
+            disabled={disabled}
             options={question.answers}
             changeHandler={(value, answerIndex, questionIndex) => 
               this.changeHandler(value, answerIndex, questionIndex)} 
