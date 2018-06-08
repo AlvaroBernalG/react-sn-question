@@ -8,13 +8,13 @@ const TogglesSwitch = ({
   selected,
   options,
   switchIndex,
-  disabled,
+  disable,
   changeHandler
 }) => {
   return (
     <Switch
       key={id}
-      disable={disabled}
+      disable={disable}
       onValueChange={(value, answerIndex) =>
         changeHandler && changeHandler(value, answerIndex, switchIndex)}
     >
@@ -35,7 +35,7 @@ TogglesSwitch.propTypes = {
   id: PropTypes.number.isRequired,
   selected: PropTypes.number.isRequired,
   switchIndex: PropTypes.number.isRequired,
-  disabled: PropTypes.bool,
+  disable: PropTypes.bool,
   options:  PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
@@ -46,7 +46,7 @@ TogglesSwitch.propTypes = {
 };
 
 TogglesSwitch.defaultProps = {
-  disabled: false,
+  disable: false,
   changeHandler: undefined
 };
 

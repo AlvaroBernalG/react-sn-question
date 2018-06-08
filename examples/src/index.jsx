@@ -34,7 +34,7 @@ class App extends React.Component {
       <div className="demo">
         <Toggles 
           {...this.state}
-          disabled={App.isQuestionCorrect(this.state.questions)}
+          disable={App.isQuestionCorrect(this.state.questions)}
           resolutionMessage={this.getResolutionMessage()}
           onChange={(...args) => this.changeHandler(...args)} 
           classStates={classes}

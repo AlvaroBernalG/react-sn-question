@@ -7,7 +7,7 @@ export default class Toggles extends React.Component {
   static propTypes = {
     onChange: PropTypes.func,
     classStates: PropTypes.arrayOf(PropTypes.string),
-    disabled: PropTypes.bool,
+    disable: PropTypes.bool,
     questionTitle: PropTypes.string,
     resolutionMessage: PropTypes.string,
     questions: PropTypes.arrayOf(
@@ -28,7 +28,7 @@ export default class Toggles extends React.Component {
   static defaultProps = {
     onChange: undefined,
     classStates: undefined,
-    disabled: false,
+    disable: false,
     questionTitle: '',
     questions: [],
     resolutionMessage: ''
@@ -87,7 +87,7 @@ export default class Toggles extends React.Component {
   }
 
   render() {
-    const { questions, questionTitle, disabled } = this.props
+    const { questions, questionTitle, disable } = this.props
     return (
       <div className={this.getClasses(questions)}>
         <h1 className='title'>
@@ -96,7 +96,7 @@ export default class Toggles extends React.Component {
         {questions.map((question, index) => (
           <TogglesSwitch 
             {...question}
-            disabled={disabled}
+            disable={disable}
             options={question.answers}
             changeHandler={(value, answerIndex, questionIndex) => 
               this.changeHandler(value, answerIndex, questionIndex)} 
