@@ -96,6 +96,7 @@ export default class Toggles extends React.Component {
         {questions.map((question, index) => (
           <TogglesSwitch 
             {...question}
+            key={question.id}
             disable={disable}
             options={question.answers}
             changeHandler={(value, answerIndex, questionIndex) => 
