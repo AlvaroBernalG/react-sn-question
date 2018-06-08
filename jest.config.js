@@ -4,6 +4,9 @@ module.exports = {
   coverageDirectory: "./coverage",
   coveragePathIgnorePatterns: ["./node_modules", "./jest.setup.js"],
   setupFiles: ["./jest.setup.js"],
+  moduleNameMapper: {
+    "\\.(css|sass|less)$": "<rootDir>/__mocks__/styleMock.js"
+  },
   transform: {
     "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
     "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
