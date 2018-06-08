@@ -1,0 +1,55 @@
+$state-colours: (
+  (success, rgb(71, 228, 193), rgb(7, 205, 221)),
+  (almost, rgb(250, 222, 97), rgb(247, 160, 28)),
+  (medium, rgb(250, 183, 97), rgb(247, 109, 28)),
+  (hot, rgb(249, 165, 79), rgb(249, 99, 27)),
+  (failure, rgb(250, 145, 97), rgb(247, 59, 28)),
+);
+
+@mixin state-colours-mixin($name, $start-colour, $end-colour) {
+  &.toggles--#{$name} {
+    background-image: linear-gradient($start-colour, $end-colour);
+    box-shadow: 0 2px 12px 6px lighten($start-colour, 20%);
+   .abg-switch__state--on {
+      color: darken($end-colour, 10%)!important;
+    }
+    .abg-switch__overlay {
+      box-shadow: 0 0 6px 1px $end-colour;
+    }
+  }
+}
+
+.toggles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 710px;
+  min-height: 365px;
+  box-sizing: border-box;
+  padding: 30px;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-image 0.4s;
+  font-family: Muli;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+  color: white;
+
+  .abg-switch__state {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  @each $colour in $state-colours {
+    @include state-colours-mixin(nth($colour, 1), nth($colour,2), nth($colour, 3));
+  }
+
+  .toggles__result {
+    font-weight: 700;
+  }
+
+}

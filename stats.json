@@ -1,0 +1,3238 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.5.0",
+  "hash": "be83c0048d868edb1920",
+  "time": 1117,
+  "builtAt": 1527868659543,
+  "publicPath": "",
+  "outputPath": "/Users/alvarogimeno/dev/react-switchable/dist",
+  "assetsByChunkName": {
+    "main": ["main.css", "index.js"]
+  },
+  "assets": [
+    {
+      "name": "main.css",
+      "size": 874,
+      "chunks": [0],
+      "chunkNames": ["main"],
+      "emitted": true
+    },
+    {
+      "name": "index.js",
+      "size": 8211,
+      "chunks": [0],
+      "chunkNames": ["main"],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [0],
+      "assets": ["main.css", "index.js"]
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 17646,
+      "names": ["main"],
+      "files": ["main.css", "index.js"],
+      "hash": "ddd477c722a00a22ef8d",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "index": 3,
+          "index2": 5,
+          "size": 956,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "issuerId": 15,
+          "issuerName": "./src/Switch.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            }
+          ],
+          "profile": {
+            "factory": 63,
+            "building": 494
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 5,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+              "module": "./src/Overlay.jsx",
+              "moduleName": "./src/Overlay.jsx",
+              "type": "cjs require",
+              "userRequest": "prop-types",
+              "loc": "13:17-38"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+              "module": "./src/State.jsx",
+              "moduleName": "./src/State.jsx",
+              "type": "cjs require",
+              "userRequest": "prop-types",
+              "loc": "13:17-38"
+            },
+            {
+              "moduleId": 15,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "module": "./src/Switch.jsx",
+              "moduleName": "./src/Switch.jsx",
+              "type": "cjs require",
+              "userRequest": "prop-types",
+              "loc": "16:17-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source":
+            "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (process.env.NODE_ENV !== 'production') {\n  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&\n    Symbol.for &&\n    Symbol.for('react.element')) ||\n    0xeac7;\n\n  var isValidElement = function(object) {\n    return typeof object === 'object' &&\n      object !== null &&\n      object.$$typeof === REACT_ELEMENT_TYPE;\n  };\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);\n} else {\n  // By explicitly using `prop-types` you are opting into new production behavior.\n  // http://fb.me/prop-types-in-prod\n  module.exports = require('./factoryWithThrowingShims')();\n}\n"
+        },
+        {
+          "id": 1,
+          "identifier":
+            "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+          "name":
+            "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+          "index": 2,
+          "index2": 0,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "issuerId": 15,
+          "issuerName": "./src/Switch.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            }
+          ],
+          "profile": {
+            "factory": 63,
+            "building": 494
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 5,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+              "module": "./src/Overlay.jsx",
+              "moduleName": "./src/Overlay.jsx",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "9:13-29"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+              "module": "./src/State.jsx",
+              "moduleName": "./src/State.jsx",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "9:13-29"
+            },
+            {
+              "moduleId": 15,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "module": "./src/Switch.jsx",
+              "moduleName": "./src/Switch.jsx",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "12:13-29"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2
+        },
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "index": 0,
+          "index2": 15,
+          "size": 729,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 46,
+            "building": 302
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest":
+                "/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "loc": "main"
+            },
+            {
+              "moduleId": 15,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "module": "./src/Switch.jsx",
+              "moduleName": "./src/Switch.jsx",
+              "type": "cjs require",
+              "userRequest": "./",
+              "loc": "20:8-21"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source":
+            "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _Switch = require(\"./Switch\");\n\nObject.defineProperty(exports, \"default\", {\n  enumerable: true,\n  get: function get() {\n    return _interopRequireDefault(_Switch).default;\n  }\n});\n\nvar _State = require(\"./State\");\n\nObject.defineProperty(exports, \"State\", {\n  enumerable: true,\n  get: function get() {\n    return _interopRequireDefault(_State).default;\n  }\n});\n\nvar _Overlay = require(\"./Overlay\");\n\nObject.defineProperty(exports, \"Overlay\", {\n  enumerable: true,\n  get: function get() {\n    return _interopRequireDefault(_Overlay).default;\n  }\n});\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }"
+        },
+        {
+          "id": 3,
+          "identifier":
+            "css /Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss 0",
+          "name":
+            "css ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+          "index": 15,
+          "index2": 12,
+          "size": 212,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+          "issuerId": 4,
+          "issuerName": "./src/Overlay.scss",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 5,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+              "name": "./src/Overlay.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 4,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "name": "./src/Overlay.scss",
+              "profile": {
+                "factory": 29,
+                "building": 484
+              }
+            }
+          ],
+          "profile": {
+            "factory": 0,
+            "building": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 4,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "module": "./src/Overlay.scss",
+              "moduleName": "./src/Overlay.scss"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3
+        },
+        {
+          "id": 4,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+          "name": "./src/Overlay.scss",
+          "index": 14,
+          "index2": 13,
+          "size": 39,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "issuerId": 5,
+          "issuerName": "./src/Overlay.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 5,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+              "name": "./src/Overlay.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            }
+          ],
+          "profile": {
+            "factory": 29,
+            "building": 484
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 5,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+              "module": "./src/Overlay.jsx",
+              "moduleName": "./src/Overlay.jsx",
+              "type": "cjs require",
+              "userRequest": "./Overlay.scss",
+              "loc": "17:0-25"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "// extracted by mini-css-extract-plugin"
+        },
+        {
+          "id": 5,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "name": "./src/Overlay.jsx",
+          "index": 13,
+          "index2": 14,
+          "size": 1733,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/index.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "module": "./src/index.jsx",
+              "moduleName": "./src/index.jsx",
+              "type": "cjs require",
+              "userRequest": "./Overlay",
+              "loc": "25:15-35"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source":
+            "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require(\"prop-types\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nrequire(\"./Overlay.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar Overlay = function Overlay(props) {\n  var goTo = props.goTo,\n      items = props.items,\n      classTransition = props.classTransition,\n      className = props.className,\n      rest = _objectWithoutProperties(props, [\"goTo\", \"items\", \"classTransition\", \"className\"]);\n\n  var classes = [className, \"abg-switch__overlay\"].join(\" \");\n  return _react2.default.createElement(\"span\", _extends({}, rest, {\n    className: classes,\n    style: {\n      width: 100 / items + \"%\",\n      transform: \"translateX(\" + 100 * goTo + \"%)\"\n    }\n  }));\n};\n\nOverlay.propTypes = {\n  goTo: _propTypes2.default.number.isRequired,\n  items: _propTypes2.default.number.isRequired,\n  classTransition: _propTypes2.default.string,\n  className: _propTypes2.default.string\n};\n\nOverlay.defaultProps = {\n  classTransition: \"abg-switch__overlay-transition\",\n  className: \"\"\n};\n\nexports.default = Overlay;"
+        },
+        {
+          "id": 6,
+          "identifier":
+            "css /Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss 0",
+          "name":
+            "css ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+          "index": 12,
+          "index2": 9,
+          "size": 420,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+          "issuerId": 7,
+          "issuerName": "./src/State.scss",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 8,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+              "name": "./src/State.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 7,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "name": "./src/State.scss",
+              "profile": {
+                "factory": 45,
+                "building": 489
+              }
+            }
+          ],
+          "profile": {
+            "factory": 0,
+            "building": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 7,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "module": "./src/State.scss",
+              "moduleName": "./src/State.scss"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3
+        },
+        {
+          "id": 7,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+          "name": "./src/State.scss",
+          "index": 11,
+          "index2": 10,
+          "size": 39,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "issuerId": 8,
+          "issuerName": "./src/State.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 8,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+              "name": "./src/State.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            }
+          ],
+          "profile": {
+            "factory": 45,
+            "building": 489
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 8,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+              "module": "./src/State.jsx",
+              "moduleName": "./src/State.jsx",
+              "type": "cjs require",
+              "userRequest": "./State.scss",
+              "loc": "17:0-23"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "// extracted by mini-css-extract-plugin"
+        },
+        {
+          "id": 8,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "name": "./src/State.jsx",
+          "index": 10,
+          "index2": 11,
+          "size": 2012,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/index.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "module": "./src/index.jsx",
+              "moduleName": "./src/index.jsx",
+              "type": "cjs require",
+              "userRequest": "./State",
+              "loc": "16:13-31"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source":
+            "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require(\"prop-types\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nrequire(\"./State.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar State = function State(props) {\n  var active = props.active,\n      tabIndex = props.tabIndex,\n      className = props.className,\n      disable = props.disable,\n      value = props.value,\n      rest = _objectWithoutProperties(props, [\"active\", \"tabIndex\", \"className\", \"disable\", \"value\"]);\n\n  var classes = [\"abg-switch__state\", className, active ? \"abg-switch__state--on\" : \"\", disable ? \"abg-switch__state--disable\" : \"\"].join(\" \");\n\n  return _react2.default.createElement(\n    \"span\",\n    _extends({}, rest, {\n      role: \"radio\",\n      \"aria-checked\": active,\n      tabIndex: tabIndex,\n      className: classes\n    }),\n    props.children,\n    _react2.default.createElement(\"input\", { type: \"radio\", value: value, defaultChecked: active })\n  );\n};\n\nState.propTypes = {\n  value: _propTypes2.default.string.isRequired,\n  children: _propTypes2.default.node,\n  disable: _propTypes2.default.bool,\n  active: _propTypes2.default.bool,\n  tabIndex: _propTypes2.default.number,\n  className: _propTypes2.default.string\n};\n\nState.defaultProps = {\n  children: \"\",\n  active: false,\n  disable: false,\n  tabIndex: 0,\n  className: \"\"\n};\n\nexports.default = State;"
+        },
+        {
+          "id": 9,
+          "identifier":
+            "css /Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss 0",
+          "name":
+            "css ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+          "index": 9,
+          "index2": 6,
+          "size": 239,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+          "issuerId": 10,
+          "issuerName": "./src/Switch.scss",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 10,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "name": "./src/Switch.scss",
+              "profile": {
+                "factory": 63,
+                "building": 494
+              }
+            }
+          ],
+          "profile": {
+            "factory": 0,
+            "building": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 10,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "module": "./src/Switch.scss",
+              "moduleName": "./src/Switch.scss"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3
+        },
+        {
+          "id": 10,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+          "name": "./src/Switch.scss",
+          "index": 8,
+          "index2": 7,
+          "size": 39,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "issuerId": 15,
+          "issuerName": "./src/Switch.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            }
+          ],
+          "profile": {
+            "factory": 63,
+            "building": 494
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 15,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "module": "./src/Switch.jsx",
+              "moduleName": "./src/Switch.jsx",
+              "type": "cjs require",
+              "userRequest": "./Switch.scss",
+              "loc": "22:0-24"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "// extracted by mini-css-extract-plugin"
+        },
+        {
+          "id": 11,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/lib/ReactPropTypesSecret.js",
+          "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+          "index": 7,
+          "index2": 3,
+          "size": 314,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerId": 14,
+          "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+              "name": "./node_modules/prop-types/index.js",
+              "profile": {
+                "factory": 63,
+                "building": 494
+              }
+            },
+            {
+              "id": 14,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+              "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "profile": {
+                "factory": 177,
+                "building": 25
+              }
+            }
+          ],
+          "profile": {
+            "factory": 7,
+            "building": 5
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 14,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+              "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "moduleName":
+                "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "type": "cjs require",
+              "userRequest": "./lib/ReactPropTypesSecret",
+              "loc": "12:27-64"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 4,
+          "source":
+            "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';\n\nmodule.exports = ReactPropTypesSecret;\n"
+        },
+        {
+          "id": 12,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/fbjs/lib/invariant.js",
+          "name": "./node_modules/fbjs/lib/invariant.js",
+          "index": 6,
+          "index2": 2,
+          "size": 1506,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerId": 14,
+          "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+              "name": "./node_modules/prop-types/index.js",
+              "profile": {
+                "factory": 63,
+                "building": 494
+              }
+            },
+            {
+              "id": 14,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+              "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "profile": {
+                "factory": 177,
+                "building": 25
+              }
+            }
+          ],
+          "profile": {
+            "factory": 7,
+            "building": 5
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 14,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+              "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "moduleName":
+                "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "type": "cjs require",
+              "userRequest": "fbjs/lib/invariant",
+              "loc": "11:16-45"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 4,
+          "source":
+            "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n *\n */\n\n'use strict';\n\n/**\n * Use invariant() to assert state which your program assumes to be true.\n *\n * Provide sprintf-style format (only %s is supported) and arguments\n * to provide information about what broke and what you were\n * expecting.\n *\n * The invariant message will be stripped in production, but the invariant\n * will remain to ensure logic does not differ in production.\n */\n\nvar validateFormat = function validateFormat(format) {};\n\nif (process.env.NODE_ENV !== 'production') {\n  validateFormat = function validateFormat(format) {\n    if (format === undefined) {\n      throw new Error('invariant requires an error message argument');\n    }\n  };\n}\n\nfunction invariant(condition, format, a, b, c, d, e, f) {\n  validateFormat(format);\n\n  if (!condition) {\n    var error;\n    if (format === undefined) {\n      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');\n    } else {\n      var args = [a, b, c, d, e, f];\n      var argIndex = 0;\n      error = new Error(format.replace(/%s/g, function () {\n        return args[argIndex++];\n      }));\n      error.name = 'Invariant Violation';\n    }\n\n    error.framesToPop = 1; // we don't care about invariant's own frame\n    throw error;\n  }\n}\n\nmodule.exports = invariant;"
+        },
+        {
+          "id": 13,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/fbjs/lib/emptyFunction.js",
+          "name": "./node_modules/fbjs/lib/emptyFunction.js",
+          "index": 5,
+          "index2": 1,
+          "size": 959,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerId": 14,
+          "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+              "name": "./node_modules/prop-types/index.js",
+              "profile": {
+                "factory": 63,
+                "building": 494
+              }
+            },
+            {
+              "id": 14,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+              "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "profile": {
+                "factory": 177,
+                "building": 25
+              }
+            }
+          ],
+          "profile": {
+            "factory": 7,
+            "building": 5
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 14,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+              "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "moduleName":
+                "./node_modules/prop-types/factoryWithThrowingShims.js",
+              "type": "cjs require",
+              "userRequest": "fbjs/lib/emptyFunction",
+              "loc": "10:20-53"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 4,
+          "source":
+            "\"use strict\";\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n *\n * \n */\n\nfunction makeEmptyFunction(arg) {\n  return function () {\n    return arg;\n  };\n}\n\n/**\n * This function accepts and discards inputs; it has no side effects. This is\n * primarily useful idiomatically for overridable function endpoints which\n * always need to be callable, since JS lacks a null-call idiom ala Cocoa.\n */\nvar emptyFunction = function emptyFunction() {};\n\nemptyFunction.thatReturns = makeEmptyFunction;\nemptyFunction.thatReturnsFalse = makeEmptyFunction(false);\nemptyFunction.thatReturnsTrue = makeEmptyFunction(true);\nemptyFunction.thatReturnsNull = makeEmptyFunction(null);\nemptyFunction.thatReturnsThis = function () {\n  return this;\n};\nemptyFunction.thatReturnsArgument = function (arg) {\n  return arg;\n};\n\nmodule.exports = emptyFunction;"
+        },
+        {
+          "id": 14,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "index": 4,
+          "index2": 4,
+          "size": 1492,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "issuerId": 0,
+          "issuerName": "./node_modules/prop-types/index.js",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            },
+            {
+              "id": 15,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+              "name": "./src/Switch.jsx",
+              "profile": {
+                "factory": 5,
+                "building": 214,
+                "dependencies": 54
+              }
+            },
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+              "name": "./node_modules/prop-types/index.js",
+              "profile": {
+                "factory": 63,
+                "building": 494
+              }
+            }
+          ],
+          "profile": {
+            "factory": 177,
+            "building": 25
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+              "module": "./node_modules/prop-types/index.js",
+              "moduleName": "./node_modules/prop-types/index.js",
+              "type": "cjs require",
+              "userRequest": "./factoryWithThrowingShims",
+              "loc": "27:19-56"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3,
+          "source":
+            "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar emptyFunction = require('fbjs/lib/emptyFunction');\nvar invariant = require('fbjs/lib/invariant');\nvar ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');\n\nmodule.exports = function() {\n  function shim(props, propName, componentName, location, propFullName, secret) {\n    if (secret === ReactPropTypesSecret) {\n      // It is still safe when called from React.\n      return;\n    }\n    invariant(\n      false,\n      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +\n      'Use PropTypes.checkPropTypes() to call them. ' +\n      'Read more at http://fb.me/use-check-prop-types'\n    );\n  };\n  shim.isRequired = shim;\n  function getShim() {\n    return shim;\n  };\n  // Important!\n  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.\n  var ReactPropTypes = {\n    array: shim,\n    bool: shim,\n    func: shim,\n    number: shim,\n    object: shim,\n    string: shim,\n    symbol: shim,\n\n    any: shim,\n    arrayOf: getShim,\n    element: shim,\n    instanceOf: getShim,\n    node: shim,\n    objectOf: getShim,\n    oneOf: getShim,\n    oneOfType: getShim,\n    shape: getShim,\n    exact: getShim\n  };\n\n  ReactPropTypes.checkPropTypes = emptyFunction;\n  ReactPropTypes.PropTypes = ReactPropTypes;\n\n  return ReactPropTypes;\n};\n"
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "index": 1,
+          "index2": 8,
+          "size": 6915,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "issuerId": 2,
+          "issuerName": "./src/index.jsx",
+          "issuerPath": [
+            {
+              "id": 2,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "name": "./src/index.jsx",
+              "profile": {
+                "factory": 46,
+                "building": 302
+              }
+            }
+          ],
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+              "module": "./src/index.jsx",
+              "moduleName": "./src/index.jsx",
+              "type": "cjs require",
+              "userRequest": "./Switch",
+              "loc": "7:14-33"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source":
+            "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.proxy = undefined;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require(\"prop-types\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _ = require(\"./\");\n\nrequire(\"./Switch.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar proxy = exports.proxy = function proxy(fn) {\n  return function (fnTarget) {\n    return function () {\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      fn.apply(undefined, args);\n      if (!fnTarget) return;\n      fnTarget.apply(fnTarget, args);\n    };\n  };\n};\n\nvar Switch = function (_Component) {\n  _inherits(Switch, _Component);\n\n  function Switch() {\n    var _ref;\n\n    var _temp, _this, _ret;\n\n    _classCallCheck(this, Switch);\n\n    for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {\n      args[_key2] = arguments[_key2];\n    }\n\n    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Switch.__proto__ || Object.getPrototypeOf(Switch)).call.apply(_ref, [this].concat(args))), _this), _this.state = {\n      activeIndex: _this.getDefaultActiveIndex()\n    }, _temp), _possibleConstructorReturn(_this, _ret);\n  }\n\n  _createClass(Switch, [{\n    key: \"onStateClicked\",\n    value: function onStateClicked(position) {\n      if (this.props.disable) return;\n\n      this.setChecked(position);\n    }\n  }, {\n    key: \"onSwitchKeyDown\",\n    value: function onSwitchKeyDown(_ref2) {\n      var key = _ref2.key;\n\n      if (key === \"ArrowLeft\" && this.state.activeIndex > 0) {\n        this.setChecked(this.state.activeIndex - 1);\n      } else if (key === \"ArrowRight\" && this.state.activeIndex < this.props.children.length - 1) {\n        this.setChecked(this.state.activeIndex + 1);\n      }\n    }\n  }, {\n    key: \"onStateKeyDown\",\n    value: function onStateKeyDown(position, _ref3) {\n      var key = _ref3.key;\n\n      if (key === \"Enter\" || key === \" \") this.setChecked(position);\n    }\n  }, {\n    key: \"getDefaultActiveIndex\",\n    value: function getDefaultActiveIndex() {\n      var pos = this.props.children.map(function (_ref4) {\n        var props = _ref4.props;\n        return props.default;\n      }).indexOf(true);\n      return pos > -1 ? pos : 0;\n    }\n  }, {\n    key: \"setChecked\",\n    value: function setChecked(newPosition) {\n      this.setState({\n        activeIndex: newPosition\n      });\n\n      if (this.props.onValueChange) {\n        var child = this.props.children[newPosition];\n        this.props.onValueChange(child.props.value, newPosition, child);\n      }\n    }\n  }, {\n    key: \"injectChildCapabilities\",\n    value: function injectChildCapabilities(child, index) {\n      return {\n        onClick: proxy(this.onStateClicked.bind(this, index))(child.props.onClick),\n        onKeyDown: proxy(this.onStateKeyDown.bind(this, index))(child.props.onKeyDown),\n        active: index === this.state.activeIndex,\n        tabIndex: this.props.disable ? -1 : child.props.tabIndex,\n        disable: this.props.disable\n      };\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var _this2 = this;\n\n      var _props = this.props,\n          disable = _props.disable,\n          children = _props.children,\n          tabIndex = _props.tabIndex,\n          className = _props.className,\n          onValueChange = _props.onValueChange,\n          rest = _objectWithoutProperties(_props, [\"disable\", \"children\", \"tabIndex\", \"className\", \"onValueChange\"]);\n\n      var classes = [\"abg-switch\", className, disable ? \"abg-switch--disable\" : \"\"].join(\" \");\n\n      return _react2.default.createElement(\n        \"div\",\n        _extends({}, rest, { className: classes }),\n        _react2.default.createElement(\n          \"div\",\n          {\n            onKeyDown: function onKeyDown(e) {\n              return _this2.onSwitchKeyDown(e);\n            },\n            className: \"abg-switch__container\",\n            role: \"radiogroup\",\n            tabIndex: disable ? -1 : tabIndex\n          },\n          _react2.default.Children.map(children, function (child, index) {\n            return _react2.default.cloneElement(child, _this2.injectChildCapabilities(child, index));\n          }),\n          _react2.default.createElement(_.Overlay, { goTo: this.state.activeIndex, items: children.length })\n        )\n      );\n    }\n  }]);\n\n  return Switch;\n}(_react.Component);\n\nSwitch.propTypes = {\n  children: _propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.element)]).isRequired,\n  onValueChange: _propTypes2.default.func,\n  tabIndex: _propTypes2.default.number,\n  disable: _propTypes2.default.bool,\n  className: _propTypes2.default.string\n};\nSwitch.defaultProps = {\n  onValueChange: undefined,\n  tabIndex: 0,\n  disable: false,\n  className: \"\"\n};\nexports.default = Switch;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+      "name": "./node_modules/prop-types/index.js",
+      "index": 3,
+      "index2": 5,
+      "size": 956,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+      "issuerId": 15,
+      "issuerName": "./src/Switch.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        }
+      ],
+      "profile": {
+        "factory": 63,
+        "building": 494
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 5,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "module": "./src/Overlay.jsx",
+          "moduleName": "./src/Overlay.jsx",
+          "type": "cjs require",
+          "userRequest": "prop-types",
+          "loc": "13:17-38"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "module": "./src/State.jsx",
+          "moduleName": "./src/State.jsx",
+          "type": "cjs require",
+          "userRequest": "prop-types",
+          "loc": "13:17-38"
+        },
+        {
+          "moduleId": 15,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "module": "./src/Switch.jsx",
+          "moduleName": "./src/Switch.jsx",
+          "type": "cjs require",
+          "userRequest": "prop-types",
+          "loc": "16:17-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source":
+        "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (process.env.NODE_ENV !== 'production') {\n  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&\n    Symbol.for &&\n    Symbol.for('react.element')) ||\n    0xeac7;\n\n  var isValidElement = function(object) {\n    return typeof object === 'object' &&\n      object !== null &&\n      object.$$typeof === REACT_ELEMENT_TYPE;\n  };\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = require('./factoryWithTypeCheckers')(isValidElement, throwOnDirectAccess);\n} else {\n  // By explicitly using `prop-types` you are opting into new production behavior.\n  // http://fb.me/prop-types-in-prod\n  module.exports = require('./factoryWithThrowingShims')();\n}\n"
+    },
+    {
+      "id": 1,
+      "identifier":
+        "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+      "name":
+        "external {\"commonjs\":\"react\",\"commonjs2\":\"react\",\"amd\":\"React\",\"root\":\"React\"}",
+      "index": 2,
+      "index2": 0,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+      "issuerId": 15,
+      "issuerName": "./src/Switch.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        }
+      ],
+      "profile": {
+        "factory": 63,
+        "building": 494
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 5,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "module": "./src/Overlay.jsx",
+          "moduleName": "./src/Overlay.jsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "9:13-29"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "module": "./src/State.jsx",
+          "moduleName": "./src/State.jsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "9:13-29"
+        },
+        {
+          "moduleId": 15,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "module": "./src/Switch.jsx",
+          "moduleName": "./src/Switch.jsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "12:13-29"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2
+    },
+    {
+      "id": 2,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+      "name": "./src/index.jsx",
+      "index": 0,
+      "index2": 15,
+      "size": 729,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 46,
+        "building": 302
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest":
+            "/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "loc": "main"
+        },
+        {
+          "moduleId": 15,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "module": "./src/Switch.jsx",
+          "moduleName": "./src/Switch.jsx",
+          "type": "cjs require",
+          "userRequest": "./",
+          "loc": "20:8-21"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0,
+      "source":
+        "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _Switch = require(\"./Switch\");\n\nObject.defineProperty(exports, \"default\", {\n  enumerable: true,\n  get: function get() {\n    return _interopRequireDefault(_Switch).default;\n  }\n});\n\nvar _State = require(\"./State\");\n\nObject.defineProperty(exports, \"State\", {\n  enumerable: true,\n  get: function get() {\n    return _interopRequireDefault(_State).default;\n  }\n});\n\nvar _Overlay = require(\"./Overlay\");\n\nObject.defineProperty(exports, \"Overlay\", {\n  enumerable: true,\n  get: function get() {\n    return _interopRequireDefault(_Overlay).default;\n  }\n});\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }"
+    },
+    {
+      "id": 3,
+      "identifier":
+        "css /Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss 0",
+      "name":
+        "css ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+      "index": 15,
+      "index2": 12,
+      "size": 212,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+      "issuerId": 4,
+      "issuerName": "./src/Overlay.scss",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 5,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "name": "./src/Overlay.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 4,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+          "name": "./src/Overlay.scss",
+          "profile": {
+            "factory": 29,
+            "building": 484
+          }
+        }
+      ],
+      "profile": {
+        "factory": 0,
+        "building": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 4,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+          "module": "./src/Overlay.scss",
+          "moduleName": "./src/Overlay.scss"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3
+    },
+    {
+      "id": 4,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+      "name": "./src/Overlay.scss",
+      "index": 14,
+      "index2": 13,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+      "issuerId": 5,
+      "issuerName": "./src/Overlay.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 5,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "name": "./src/Overlay.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        }
+      ],
+      "profile": {
+        "factory": 29,
+        "building": 484
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 5,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+          "module": "./src/Overlay.jsx",
+          "moduleName": "./src/Overlay.jsx",
+          "type": "cjs require",
+          "userRequest": "./Overlay.scss",
+          "loc": "17:0-25"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "// extracted by mini-css-extract-plugin"
+    },
+    {
+      "id": 5,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.jsx",
+      "name": "./src/Overlay.jsx",
+      "index": 13,
+      "index2": 14,
+      "size": 1733,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/index.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        }
+      ],
+      "profile": {
+        "factory": 5,
+        "building": 214,
+        "dependencies": 54
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "module": "./src/index.jsx",
+          "moduleName": "./src/index.jsx",
+          "type": "cjs require",
+          "userRequest": "./Overlay",
+          "loc": "25:15-35"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source":
+        "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require(\"prop-types\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nrequire(\"./Overlay.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar Overlay = function Overlay(props) {\n  var goTo = props.goTo,\n      items = props.items,\n      classTransition = props.classTransition,\n      className = props.className,\n      rest = _objectWithoutProperties(props, [\"goTo\", \"items\", \"classTransition\", \"className\"]);\n\n  var classes = [className, \"abg-switch__overlay\"].join(\" \");\n  return _react2.default.createElement(\"span\", _extends({}, rest, {\n    className: classes,\n    style: {\n      width: 100 / items + \"%\",\n      transform: \"translateX(\" + 100 * goTo + \"%)\"\n    }\n  }));\n};\n\nOverlay.propTypes = {\n  goTo: _propTypes2.default.number.isRequired,\n  items: _propTypes2.default.number.isRequired,\n  classTransition: _propTypes2.default.string,\n  className: _propTypes2.default.string\n};\n\nOverlay.defaultProps = {\n  classTransition: \"abg-switch__overlay-transition\",\n  className: \"\"\n};\n\nexports.default = Overlay;"
+    },
+    {
+      "id": 6,
+      "identifier":
+        "css /Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss 0",
+      "name":
+        "css ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+      "index": 12,
+      "index2": 9,
+      "size": 420,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+      "issuerId": 7,
+      "issuerName": "./src/State.scss",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 8,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "name": "./src/State.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 7,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+          "name": "./src/State.scss",
+          "profile": {
+            "factory": 45,
+            "building": 489
+          }
+        }
+      ],
+      "profile": {
+        "factory": 0,
+        "building": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 7,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+          "module": "./src/State.scss",
+          "moduleName": "./src/State.scss"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3
+    },
+    {
+      "id": 7,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+      "name": "./src/State.scss",
+      "index": 11,
+      "index2": 10,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+      "issuerId": 8,
+      "issuerName": "./src/State.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 8,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "name": "./src/State.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        }
+      ],
+      "profile": {
+        "factory": 45,
+        "building": 489
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 8,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+          "module": "./src/State.jsx",
+          "moduleName": "./src/State.jsx",
+          "type": "cjs require",
+          "userRequest": "./State.scss",
+          "loc": "17:0-23"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "// extracted by mini-css-extract-plugin"
+    },
+    {
+      "id": 8,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/State.jsx",
+      "name": "./src/State.jsx",
+      "index": 10,
+      "index2": 11,
+      "size": 2012,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/index.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        }
+      ],
+      "profile": {
+        "factory": 5,
+        "building": 214,
+        "dependencies": 54
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "module": "./src/index.jsx",
+          "moduleName": "./src/index.jsx",
+          "type": "cjs require",
+          "userRequest": "./State",
+          "loc": "16:13-31"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source":
+        "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require(\"prop-types\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nrequire(\"./State.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar State = function State(props) {\n  var active = props.active,\n      tabIndex = props.tabIndex,\n      className = props.className,\n      disable = props.disable,\n      value = props.value,\n      rest = _objectWithoutProperties(props, [\"active\", \"tabIndex\", \"className\", \"disable\", \"value\"]);\n\n  var classes = [\"abg-switch__state\", className, active ? \"abg-switch__state--on\" : \"\", disable ? \"abg-switch__state--disable\" : \"\"].join(\" \");\n\n  return _react2.default.createElement(\n    \"span\",\n    _extends({}, rest, {\n      role: \"radio\",\n      \"aria-checked\": active,\n      tabIndex: tabIndex,\n      className: classes\n    }),\n    props.children,\n    _react2.default.createElement(\"input\", { type: \"radio\", value: value, defaultChecked: active })\n  );\n};\n\nState.propTypes = {\n  value: _propTypes2.default.string.isRequired,\n  children: _propTypes2.default.node,\n  disable: _propTypes2.default.bool,\n  active: _propTypes2.default.bool,\n  tabIndex: _propTypes2.default.number,\n  className: _propTypes2.default.string\n};\n\nState.defaultProps = {\n  children: \"\",\n  active: false,\n  disable: false,\n  tabIndex: 0,\n  className: \"\"\n};\n\nexports.default = State;"
+    },
+    {
+      "id": 9,
+      "identifier":
+        "css /Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss 0",
+      "name":
+        "css ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+      "index": 9,
+      "index2": 6,
+      "size": 239,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+      "issuerId": 10,
+      "issuerName": "./src/Switch.scss",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 10,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+          "name": "./src/Switch.scss",
+          "profile": {
+            "factory": 63,
+            "building": 494
+          }
+        }
+      ],
+      "profile": {
+        "factory": 0,
+        "building": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 10,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+          "module": "./src/Switch.scss",
+          "moduleName": "./src/Switch.scss"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3
+    },
+    {
+      "id": 10,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/mini-css-extract-plugin/dist/loader.js!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+      "name": "./src/Switch.scss",
+      "index": 8,
+      "index2": 7,
+      "size": 39,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+      "issuerId": 15,
+      "issuerName": "./src/Switch.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        }
+      ],
+      "profile": {
+        "factory": 63,
+        "building": 494
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 15,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "module": "./src/Switch.jsx",
+          "moduleName": "./src/Switch.jsx",
+          "type": "cjs require",
+          "userRequest": "./Switch.scss",
+          "loc": "22:0-24"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "// extracted by mini-css-extract-plugin"
+    },
+    {
+      "id": 11,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "index": 7,
+      "index2": 3,
+      "size": 314,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerId": 14,
+      "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "profile": {
+            "factory": 63,
+            "building": 494
+          }
+        },
+        {
+          "id": 14,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "profile": {
+            "factory": 177,
+            "building": 25
+          }
+        }
+      ],
+      "profile": {
+        "factory": 7,
+        "building": 5
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 14,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "moduleName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "type": "cjs require",
+          "userRequest": "./lib/ReactPropTypesSecret",
+          "loc": "12:27-64"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 4,
+      "source":
+        "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';\n\nmodule.exports = ReactPropTypesSecret;\n"
+    },
+    {
+      "id": 12,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/fbjs/lib/invariant.js",
+      "name": "./node_modules/fbjs/lib/invariant.js",
+      "index": 6,
+      "index2": 2,
+      "size": 1506,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerId": 14,
+      "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "profile": {
+            "factory": 63,
+            "building": 494
+          }
+        },
+        {
+          "id": 14,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "profile": {
+            "factory": 177,
+            "building": 25
+          }
+        }
+      ],
+      "profile": {
+        "factory": 7,
+        "building": 5
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 14,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "moduleName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/invariant",
+          "loc": "11:16-45"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 4,
+      "source":
+        "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n *\n */\n\n'use strict';\n\n/**\n * Use invariant() to assert state which your program assumes to be true.\n *\n * Provide sprintf-style format (only %s is supported) and arguments\n * to provide information about what broke and what you were\n * expecting.\n *\n * The invariant message will be stripped in production, but the invariant\n * will remain to ensure logic does not differ in production.\n */\n\nvar validateFormat = function validateFormat(format) {};\n\nif (process.env.NODE_ENV !== 'production') {\n  validateFormat = function validateFormat(format) {\n    if (format === undefined) {\n      throw new Error('invariant requires an error message argument');\n    }\n  };\n}\n\nfunction invariant(condition, format, a, b, c, d, e, f) {\n  validateFormat(format);\n\n  if (!condition) {\n    var error;\n    if (format === undefined) {\n      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');\n    } else {\n      var args = [a, b, c, d, e, f];\n      var argIndex = 0;\n      error = new Error(format.replace(/%s/g, function () {\n        return args[argIndex++];\n      }));\n      error.name = 'Invariant Violation';\n    }\n\n    error.framesToPop = 1; // we don't care about invariant's own frame\n    throw error;\n  }\n}\n\nmodule.exports = invariant;"
+    },
+    {
+      "id": 13,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/fbjs/lib/emptyFunction.js",
+      "name": "./node_modules/fbjs/lib/emptyFunction.js",
+      "index": 5,
+      "index2": 1,
+      "size": 959,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerId": 14,
+      "issuerName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "profile": {
+            "factory": 63,
+            "building": 494
+          }
+        },
+        {
+          "id": 14,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "profile": {
+            "factory": 177,
+            "building": 25
+          }
+        }
+      ],
+      "profile": {
+        "factory": 7,
+        "building": 5
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 14,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+          "module": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "moduleName": "./node_modules/prop-types/factoryWithThrowingShims.js",
+          "type": "cjs require",
+          "userRequest": "fbjs/lib/emptyFunction",
+          "loc": "10:20-53"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 4,
+      "source":
+        "\"use strict\";\n\n/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n *\n * \n */\n\nfunction makeEmptyFunction(arg) {\n  return function () {\n    return arg;\n  };\n}\n\n/**\n * This function accepts and discards inputs; it has no side effects. This is\n * primarily useful idiomatically for overridable function endpoints which\n * always need to be callable, since JS lacks a null-call idiom ala Cocoa.\n */\nvar emptyFunction = function emptyFunction() {};\n\nemptyFunction.thatReturns = makeEmptyFunction;\nemptyFunction.thatReturnsFalse = makeEmptyFunction(false);\nemptyFunction.thatReturnsTrue = makeEmptyFunction(true);\nemptyFunction.thatReturnsNull = makeEmptyFunction(null);\nemptyFunction.thatReturnsThis = function () {\n  return this;\n};\nemptyFunction.thatReturnsArgument = function (arg) {\n  return arg;\n};\n\nmodule.exports = emptyFunction;"
+    },
+    {
+      "id": 14,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/factoryWithThrowingShims.js",
+      "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "index": 4,
+      "index2": 4,
+      "size": 1492,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+      "issuerId": 0,
+      "issuerName": "./node_modules/prop-types/index.js",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        },
+        {
+          "id": 15,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+          "name": "./src/Switch.jsx",
+          "profile": {
+            "factory": 5,
+            "building": 214,
+            "dependencies": 54
+          }
+        },
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "name": "./node_modules/prop-types/index.js",
+          "profile": {
+            "factory": 63,
+            "building": 494
+          }
+        }
+      ],
+      "profile": {
+        "factory": 177,
+        "building": 25
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/prop-types/index.js",
+          "module": "./node_modules/prop-types/index.js",
+          "moduleName": "./node_modules/prop-types/index.js",
+          "type": "cjs require",
+          "userRequest": "./factoryWithThrowingShims",
+          "loc": "27:19-56"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3,
+      "source":
+        "/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\n'use strict';\n\nvar emptyFunction = require('fbjs/lib/emptyFunction');\nvar invariant = require('fbjs/lib/invariant');\nvar ReactPropTypesSecret = require('./lib/ReactPropTypesSecret');\n\nmodule.exports = function() {\n  function shim(props, propName, componentName, location, propFullName, secret) {\n    if (secret === ReactPropTypesSecret) {\n      // It is still safe when called from React.\n      return;\n    }\n    invariant(\n      false,\n      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +\n      'Use PropTypes.checkPropTypes() to call them. ' +\n      'Read more at http://fb.me/use-check-prop-types'\n    );\n  };\n  shim.isRequired = shim;\n  function getShim() {\n    return shim;\n  };\n  // Important!\n  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.\n  var ReactPropTypes = {\n    array: shim,\n    bool: shim,\n    func: shim,\n    number: shim,\n    object: shim,\n    string: shim,\n    symbol: shim,\n\n    any: shim,\n    arrayOf: getShim,\n    element: shim,\n    instanceOf: getShim,\n    node: shim,\n    objectOf: getShim,\n    oneOf: getShim,\n    oneOfType: getShim,\n    shape: getShim,\n    exact: getShim\n  };\n\n  ReactPropTypes.checkPropTypes = emptyFunction;\n  ReactPropTypes.PropTypes = ReactPropTypes;\n\n  return ReactPropTypes;\n};\n"
+    },
+    {
+      "id": 15,
+      "identifier":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.jsx",
+      "name": "./src/Switch.jsx",
+      "index": 1,
+      "index2": 8,
+      "size": 6915,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [0],
+      "issuer":
+        "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+      "issuerId": 2,
+      "issuerName": "./src/index.jsx",
+      "issuerPath": [
+        {
+          "id": 2,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "name": "./src/index.jsx",
+          "profile": {
+            "factory": 46,
+            "building": 302
+          }
+        }
+      ],
+      "profile": {
+        "factory": 5,
+        "building": 214,
+        "dependencies": 54
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/babel-loader/lib/index.js!/Users/alvarogimeno/dev/react-switchable/src/index.jsx",
+          "module": "./src/index.jsx",
+          "moduleName": "./src/index.jsx",
+          "type": "cjs require",
+          "userRequest": "./Switch",
+          "loc": "7:14-33"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source":
+        "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.proxy = undefined;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require(\"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _propTypes = require(\"prop-types\");\n\nvar _propTypes2 = _interopRequireDefault(_propTypes);\n\nvar _ = require(\"./\");\n\nrequire(\"./Switch.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar proxy = exports.proxy = function proxy(fn) {\n  return function (fnTarget) {\n    return function () {\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      fn.apply(undefined, args);\n      if (!fnTarget) return;\n      fnTarget.apply(fnTarget, args);\n    };\n  };\n};\n\nvar Switch = function (_Component) {\n  _inherits(Switch, _Component);\n\n  function Switch() {\n    var _ref;\n\n    var _temp, _this, _ret;\n\n    _classCallCheck(this, Switch);\n\n    for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {\n      args[_key2] = arguments[_key2];\n    }\n\n    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Switch.__proto__ || Object.getPrototypeOf(Switch)).call.apply(_ref, [this].concat(args))), _this), _this.state = {\n      activeIndex: _this.getDefaultActiveIndex()\n    }, _temp), _possibleConstructorReturn(_this, _ret);\n  }\n\n  _createClass(Switch, [{\n    key: \"onStateClicked\",\n    value: function onStateClicked(position) {\n      if (this.props.disable) return;\n\n      this.setChecked(position);\n    }\n  }, {\n    key: \"onSwitchKeyDown\",\n    value: function onSwitchKeyDown(_ref2) {\n      var key = _ref2.key;\n\n      if (key === \"ArrowLeft\" && this.state.activeIndex > 0) {\n        this.setChecked(this.state.activeIndex - 1);\n      } else if (key === \"ArrowRight\" && this.state.activeIndex < this.props.children.length - 1) {\n        this.setChecked(this.state.activeIndex + 1);\n      }\n    }\n  }, {\n    key: \"onStateKeyDown\",\n    value: function onStateKeyDown(position, _ref3) {\n      var key = _ref3.key;\n\n      if (key === \"Enter\" || key === \" \") this.setChecked(position);\n    }\n  }, {\n    key: \"getDefaultActiveIndex\",\n    value: function getDefaultActiveIndex() {\n      var pos = this.props.children.map(function (_ref4) {\n        var props = _ref4.props;\n        return props.default;\n      }).indexOf(true);\n      return pos > -1 ? pos : 0;\n    }\n  }, {\n    key: \"setChecked\",\n    value: function setChecked(newPosition) {\n      this.setState({\n        activeIndex: newPosition\n      });\n\n      if (this.props.onValueChange) {\n        var child = this.props.children[newPosition];\n        this.props.onValueChange(child.props.value, newPosition, child);\n      }\n    }\n  }, {\n    key: \"injectChildCapabilities\",\n    value: function injectChildCapabilities(child, index) {\n      return {\n        onClick: proxy(this.onStateClicked.bind(this, index))(child.props.onClick),\n        onKeyDown: proxy(this.onStateKeyDown.bind(this, index))(child.props.onKeyDown),\n        active: index === this.state.activeIndex,\n        tabIndex: this.props.disable ? -1 : child.props.tabIndex,\n        disable: this.props.disable\n      };\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      var _this2 = this;\n\n      var _props = this.props,\n          disable = _props.disable,\n          children = _props.children,\n          tabIndex = _props.tabIndex,\n          className = _props.className,\n          onValueChange = _props.onValueChange,\n          rest = _objectWithoutProperties(_props, [\"disable\", \"children\", \"tabIndex\", \"className\", \"onValueChange\"]);\n\n      var classes = [\"abg-switch\", className, disable ? \"abg-switch--disable\" : \"\"].join(\" \");\n\n      return _react2.default.createElement(\n        \"div\",\n        _extends({}, rest, { className: classes }),\n        _react2.default.createElement(\n          \"div\",\n          {\n            onKeyDown: function onKeyDown(e) {\n              return _this2.onSwitchKeyDown(e);\n            },\n            className: \"abg-switch__container\",\n            role: \"radiogroup\",\n            tabIndex: disable ? -1 : tabIndex\n          },\n          _react2.default.Children.map(children, function (child, index) {\n            return _react2.default.cloneElement(child, _this2.injectChildCapabilities(child, index));\n          }),\n          _react2.default.createElement(_.Overlay, { goTo: this.state.activeIndex, items: children.length })\n        )\n      );\n    }\n  }]);\n\n  return Switch;\n}(_react.Component);\n\nSwitch.propTypes = {\n  children: _propTypes2.default.oneOfType([_propTypes2.default.arrayOf(_propTypes2.default.element)]).isRequired,\n  onValueChange: _propTypes2.default.func,\n  tabIndex: _propTypes2.default.number,\n  disable: _propTypes2.default.bool,\n  className: _propTypes2.default.string\n};\nSwitch.defaultProps = {\n  onValueChange: undefined,\n  tabIndex: 0,\n  disable: false,\n  className: \"\"\n};\nexports.default = Switch;"
+    }
+  ],
+  "filteredModules": 0,
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "",
+      "outputPath": "/Users/alvarogimeno/dev/react-switchable/dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [0],
+          "assets": ["*"]
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 2635,
+          "names": ["mini-css-extract-plugin"],
+          "files": ["*"],
+          "hash": "ca410a50f4adc8890b07",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/lib/css-base.js",
+              "name": "./node_modules/css-loader/lib/css-base.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2260,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [0],
+              "issuer":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "issuerId": 1,
+              "issuerName":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+              "issuerPath": [
+                {
+                  "id": 1,
+                  "identifier":
+                    "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+                  "name":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+                  "profile": {
+                    "factory": 143,
+                    "building": 293
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 12,
+                "building": 7
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": 1,
+                  "moduleIdentifier":
+                    "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+                  "module":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+                  "moduleName":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+                  "type": "cjs require",
+                  "userRequest": "../node_modules/css-loader/lib/css-base.js",
+                  "loc": "1:27-80"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source":
+                "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
+            },
+            {
+              "id": 1,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "name":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+              "index": 0,
+              "index2": 1,
+              "size": 375,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [0],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 143,
+                "building": 293
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest":
+                    "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source":
+                "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(undefined);\n// imports\n\n\n// module\nexports.push([module.id, \".abg-switch__overlay{position:absolute;height:100%;border-radius:100px;background-color:hsla(0,0%,98%,.5);box-shadow:0 0 6px 1px #e66549;border:1px solid transparent;box-sizing:border-box;transition:all .4s ease}\", \"\"]);\n\n// exports\n"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request":
+                "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/lib/css-base.js",
+          "name": "./node_modules/css-loader/lib/css-base.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2260,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+          "issuerId": 1,
+          "issuerName":
+            "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "name":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+              "profile": {
+                "factory": 143,
+                "building": 293
+              }
+            }
+          ],
+          "profile": {
+            "factory": 12,
+            "building": 7
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "module":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+              "moduleName":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+              "type": "cjs require",
+              "userRequest": "../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-80"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source":
+            "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
+        },
+        {
+          "id": 1,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+          "name":
+            "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Overlay.scss",
+          "index": 0,
+          "index2": 1,
+          "size": 375,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 143,
+            "building": 293
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest":
+                "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Overlay.scss",
+              "loc": "mini-css-extract-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source":
+            "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(undefined);\n// imports\n\n\n// module\nexports.push([module.id, \".abg-switch__overlay{position:absolute;height:100%;border-radius:100px;background-color:hsla(0,0%,98%,.5);box-shadow:0 0 6px 1px #e66549;border:1px solid transparent;box-sizing:border-box;transition:all .4s ease}\", \"\"]);\n\n// exports\n"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [],
+      "name":
+        "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/sass-loader/lib/loader.js!src/Overlay.scss"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "",
+      "outputPath": "/Users/alvarogimeno/dev/react-switchable/dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [0],
+          "assets": ["*"]
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 2843,
+          "names": ["mini-css-extract-plugin"],
+          "files": ["*"],
+          "hash": "b4677927d7d1db858834",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/lib/css-base.js",
+              "name": "./node_modules/css-loader/lib/css-base.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2260,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [0],
+              "issuer":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "issuerId": 1,
+              "issuerName":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+              "issuerPath": [
+                {
+                  "id": 1,
+                  "identifier":
+                    "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+                  "name":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+                  "profile": {
+                    "factory": 144,
+                    "building": 305
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 1,
+                "building": 10
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": 1,
+                  "moduleIdentifier":
+                    "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+                  "module":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+                  "moduleName":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+                  "type": "cjs require",
+                  "userRequest": "../node_modules/css-loader/lib/css-base.js",
+                  "loc": "1:27-80"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source":
+                "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
+            },
+            {
+              "id": 1,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "name":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+              "index": 0,
+              "index2": 1,
+              "size": 583,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [0],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 144,
+                "building": 305
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest":
+                    "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source":
+                "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(undefined);\n// imports\n\n\n// module\nexports.push([module.id, \".abg-switch__state{display:flex;justify-content:center;align-items:center;letter-spacing:1.2px;cursor:pointer;width:100%;height:100%;padding:15px;font-weight:700;background:transparent;overflow:visible;color:inherit;font:inherit;border:none}.abg-switch__state:not(.switch__state--disable):hover{color:#e6e6e6}.abg-switch__state input{display:none}.abg-switch__state--on{z-index:2;color:#e66549!important;font-weight:700}\", \"\"]);\n\n// exports\n"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request":
+                "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/lib/css-base.js",
+          "name": "./node_modules/css-loader/lib/css-base.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2260,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+          "issuerId": 1,
+          "issuerName":
+            "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "name":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+              "profile": {
+                "factory": 144,
+                "building": 305
+              }
+            }
+          ],
+          "profile": {
+            "factory": 1,
+            "building": 10
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "module":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+              "moduleName":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+              "type": "cjs require",
+              "userRequest": "../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-80"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source":
+            "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
+        },
+        {
+          "id": 1,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+          "name":
+            "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/State.scss",
+          "index": 0,
+          "index2": 1,
+          "size": 583,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 144,
+            "building": 305
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest":
+                "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/State.scss",
+              "loc": "mini-css-extract-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source":
+            "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(undefined);\n// imports\n\n\n// module\nexports.push([module.id, \".abg-switch__state{display:flex;justify-content:center;align-items:center;letter-spacing:1.2px;cursor:pointer;width:100%;height:100%;padding:15px;font-weight:700;background:transparent;overflow:visible;color:inherit;font:inherit;border:none}.abg-switch__state:not(.switch__state--disable):hover{color:#e6e6e6}.abg-switch__state input{display:none}.abg-switch__state--on{z-index:2;color:#e66549!important;font-weight:700}\", \"\"]);\n\n// exports\n"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [],
+      "name":
+        "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/sass-loader/lib/loader.js!src/State.scss"
+    },
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "",
+      "outputPath": "/Users/alvarogimeno/dev/react-switchable/dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "chunks": [0],
+          "assets": ["*"]
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 2662,
+          "names": ["mini-css-extract-plugin"],
+          "files": ["*"],
+          "hash": "6b5af3543d6eb6ee1436",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "id": 0,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/lib/css-base.js",
+              "name": "./node_modules/css-loader/lib/css-base.js",
+              "index": 1,
+              "index2": 0,
+              "size": 2260,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [0],
+              "issuer":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "issuerId": 1,
+              "issuerName":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+              "issuerPath": [
+                {
+                  "id": 1,
+                  "identifier":
+                    "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+                  "name":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+                  "profile": {
+                    "factory": 10,
+                    "building": 423
+                  }
+                }
+              ],
+              "profile": {
+                "factory": 20,
+                "building": 4
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": 1,
+                  "moduleIdentifier":
+                    "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+                  "module":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+                  "moduleName":
+                    "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+                  "type": "cjs require",
+                  "userRequest": "../node_modules/css-loader/lib/css-base.js",
+                  "loc": "1:27-80"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 1,
+              "source":
+                "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
+            },
+            {
+              "id": 1,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "name":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+              "index": 0,
+              "index2": 1,
+              "size": 402,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [0],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 10,
+                "building": 423
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest":
+                    "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+                  "loc": "mini-css-extract-plugin"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source":
+                "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(undefined);\n// imports\n\n\n// module\nexports.push([module.id, \".abg-switch{width:610px;min-height:45px;box-sizing:border-box;margin:10px}.abg-switch__container{position:relative;display:flex;align-items:center;width:610px;height:100%;min-height:45px;border:1px solid #fff;border-radius:100px;z-index:1}\", \"\"]);\n\n// exports\n"
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request":
+                "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/lib/css-base.js",
+          "name": "./node_modules/css-loader/lib/css-base.js",
+          "index": 1,
+          "index2": 0,
+          "size": 2260,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+          "issuerId": 1,
+          "issuerName":
+            "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+          "issuerPath": [
+            {
+              "id": 1,
+              "identifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "name":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+              "profile": {
+                "factory": 10,
+                "building": 423
+              }
+            }
+          ],
+          "profile": {
+            "factory": 20,
+            "building": 4
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier":
+                "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "module":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+              "moduleName":
+                "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+              "type": "cjs require",
+              "userRequest": "../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-80"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source":
+            "/*\n\tMIT License http://www.opensource.org/licenses/mit-license.php\n\tAuthor Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\nmodule.exports = function(useSourceMap) {\n\tvar list = [];\n\n\t// return the list of modules as css string\n\tlist.toString = function toString() {\n\t\treturn this.map(function (item) {\n\t\t\tvar content = cssWithMappingToString(item, useSourceMap);\n\t\t\tif(item[2]) {\n\t\t\t\treturn \"@media \" + item[2] + \"{\" + content + \"}\";\n\t\t\t} else {\n\t\t\t\treturn content;\n\t\t\t}\n\t\t}).join(\"\");\n\t};\n\n\t// import a list of modules into the list\n\tlist.i = function(modules, mediaQuery) {\n\t\tif(typeof modules === \"string\")\n\t\t\tmodules = [[null, modules, \"\"]];\n\t\tvar alreadyImportedModules = {};\n\t\tfor(var i = 0; i < this.length; i++) {\n\t\t\tvar id = this[i][0];\n\t\t\tif(typeof id === \"number\")\n\t\t\t\talreadyImportedModules[id] = true;\n\t\t}\n\t\tfor(i = 0; i < modules.length; i++) {\n\t\t\tvar item = modules[i];\n\t\t\t// skip already imported module\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\n\t\t\t//  when a module is imported multiple times with different media queries.\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\n\t\t\t\tif(mediaQuery && !item[2]) {\n\t\t\t\t\titem[2] = mediaQuery;\n\t\t\t\t} else if(mediaQuery) {\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\n\t\t\t\t}\n\t\t\t\tlist.push(item);\n\t\t\t}\n\t\t}\n\t};\n\treturn list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n\tvar content = item[1] || '';\n\tvar cssMapping = item[3];\n\tif (!cssMapping) {\n\t\treturn content;\n\t}\n\n\tif (useSourceMap && typeof btoa === 'function') {\n\t\tvar sourceMapping = toComment(cssMapping);\n\t\tvar sourceURLs = cssMapping.sources.map(function (source) {\n\t\t\treturn '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'\n\t\t});\n\n\t\treturn [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n\t}\n\n\treturn [content].join('\\n');\n}\n\n// Adapted from convert-source-map (MIT)\nfunction toComment(sourceMap) {\n\t// eslint-disable-next-line no-undef\n\tvar base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n\tvar data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;\n\n\treturn '/*# ' + data + ' */';\n}\n"
+        },
+        {
+          "id": 1,
+          "identifier":
+            "/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+          "name":
+            "./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/Switch.scss",
+          "index": 0,
+          "index2": 1,
+          "size": 402,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [0],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 10,
+            "building": 423
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest":
+                "!!/Users/alvarogimeno/dev/react-switchable/node_modules/css-loader/index.js!/Users/alvarogimeno/dev/react-switchable/node_modules/sass-loader/lib/loader.js!/Users/alvarogimeno/dev/react-switchable/src/Switch.scss",
+              "loc": "mini-css-extract-plugin"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source":
+            "exports = module.exports = require(\"../node_modules/css-loader/lib/css-base.js\")(undefined);\n// imports\n\n\n// module\nexports.push([module.id, \".abg-switch{width:610px;min-height:45px;box-sizing:border-box;margin:10px}.abg-switch__container{position:relative;display:flex;align-items:center;width:610px;height:100%;min-height:45px;border:1px solid #fff;border-radius:100px;z-index:1}\", \"\"]);\n\n// exports\n"
+        }
+      ],
+      "filteredModules": 0,
+      "children": [],
+      "name":
+        "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/sass-loader/lib/loader.js!src/Switch.scss"
+    }
+  ]
+}
