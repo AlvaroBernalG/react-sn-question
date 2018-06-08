@@ -1,6 +1,6 @@
 {
   "name": "react-sn-question",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component to ask questions.",
   "main": "dist/index.js",
   "scripts": {
