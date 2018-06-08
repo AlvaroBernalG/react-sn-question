@@ -32,9 +32,5 @@ describe("<Toggles />", () => {
     expect(enzwrapper.find(".toggles__title").text()).toBe("works");
   });
 
-  it("should call a changeHandler() everytime a switch is modified.", () => {
-    const enzwrapper = mount(wrapper());
-    enzwrapper.setProps({ questionTitle: "works" });
-    expect(enzwrapper.find(".toggles__title").text()).toBe("works");
-  });
+
 });
