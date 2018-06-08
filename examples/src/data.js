@@ -8,14 +8,14 @@ export const quiz = {
       selected: 1,
       answers: [
         {
-          name: "Cell Wall",
-          value: "Cell Wall",
-          id: 1
-        },
-        {
           name: "Ribosomes",
           value: "Ribosomes",
           id: 2
+        },
+        {
+          name: "Cell Wall",
+          value: "Cell Wall",
+          id: 1
         }
       ]
     },
@@ -42,14 +42,14 @@ export const quiz = {
       selected: 0,
       answers: [
         {
-          name: "Impermeable membrane",
-          value: "Impermeable membrane",
-          id: 5
-        },
-        {
           name: "Partially permeable membrane",
           value: "Partially permeable membrane",
           id: 6
+        },
+        {
+          name: "Impermeable membrane",
+          value: "Impermeable membrane",
+          id: 5
         }
       ]
     }
