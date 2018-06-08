@@ -90,7 +90,7 @@ export default class Toggles extends React.Component {
     const { questions, questionTitle, disable } = this.props
     return (
       <div className={this.getClasses(questions)}>
-        <h1 className='title'>
+        <h1 className='toggles__title'>
           {questionTitle}
         </h1>
         {questions.map((question, index) => (

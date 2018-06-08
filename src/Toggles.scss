@@ -40,16 +40,16 @@ $state-colours: (
     text-align: center;
   }
 
-  .title {
+  .toggles__title {
     font-size: 17px;
-  }
-
-  @each $colour in $state-colours {
-    @include state-colours-mixin(nth($colour, 1), nth($colour,2), nth($colour, 3));
   }
 
   .toggles__result {
     font-weight: 700;
+  }
+
+  @each $colour in $state-colours {
+    @include state-colours-mixin(nth($colour, 1), nth($colour,2), nth($colour, 3));
   }
 
 }
