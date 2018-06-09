@@ -11,8 +11,24 @@ describe("<Toggles />", () => {
     expect(enzWrapper.find(".toggles").length).toBe(1);
   });
 
-  it("should correctly compute the score.", () => {
+  it("computeScore() should correctly compute the score.", () => {
     expect(Toggles.computeScore(mockUpTest.questions)).toBe(2);
+  });
+
+  it("reduceQuestion() should correctly update questions.", () => {
+    const updatedQuestions = Toggles.reduceQuestion(mockUpTest.questions, {
+      questionIndex: 0,
+      answerIndex: 0
+    });
+    expect(updatedQuestions[0].selected).toBe(0);
+  });
+
+  it("isQuestionCorrect() should return true if all answers are correct.", () => {
+    const updatedQuestions = Toggles.reduceQuestion(mockUpTest.questions, {
+      questionIndex: 0,
+      answerIndex: 0
+    });
+    expect(Toggles.isQuestionCorrect(updatedQuestions)).toBe(true);
   });
 
   it("should correctly render the class states.", () => {
@@ -31,6 +47,4 @@ describe("<Toggles />", () => {
     enzwrapper.setProps({ questionTitle: "works" });
     expect(enzwrapper.find(".toggles__title").text()).toBe("works");
   });
-
-
 });

@@ -42,6 +42,15 @@ export default class Toggles extends React.Component {
       0
     );
 
+  static reduceQuestion = (questions, { questionIndex, answerIndex }) => [
+    ...questions.slice(0, questionIndex),
+    { ...questions[questionIndex], selected: answerIndex },
+    ...questions.slice(questionIndex + 1, questions.length)
+  ];
+
+  static isQuestionCorrect = questions =>
+    questions.every(q => q.selected === q.correct);
+
   static computeDefaultClasses(classes, nthQuestions) {
     return [
       classes[0],
