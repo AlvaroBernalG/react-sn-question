@@ -1,5 +1,5 @@
 import React from "react";
-import { mount } from "enzyme";
+import { mount, shallow } from "enzyme";
 import SNQuestion from "../src/";
 import { mockUpTest } from "./data";
 
@@ -11,6 +11,11 @@ describe("<SNQuestion />", () => {
   it("should correctly mount the component.", () => {
     const enzWrapper = mount(wrapper(defaultProps));
     expect(enzWrapper.find(".snquestion").length).toBe(1);
+  });
+
+  it("should match the snapshot.", () => {
+    const enzWrapper = shallow(wrapper(defaultProps));
+    expect(enzWrapper).toMatchSnapshot();
   });
 
   it("computeScore() should correctly compute the score.", () => {

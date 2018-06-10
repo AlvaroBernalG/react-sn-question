@@ -19,4 +19,20 @@ describe("<SNToggles />", () => {
 
     wrapper.unmount();
   });
+
+  it("should match the snapshot.", () => {
+    const question = mockUpTest.questions[0];
+    const enzWrapper = mount(
+      <SNToggles
+        {...question}
+        key={1}
+        disable={false}
+        changeHandler={(...args) => console.log(...args)}
+        switchIndex={1}
+      />
+    );
+
+    expect(enzWrapper).toMatchSnapshot();
+
+  });
 });

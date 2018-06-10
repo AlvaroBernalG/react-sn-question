@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SNQuestion /> should match the snapshot. 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SNQuestion
+    classStates={undefined}
+    disable={false}
+    id={33}
+    onChange={undefined}
+    questions={
+      Array [
+        Object {
+          "correct": 0,
+          "id": 0,
+          "options": Array [
+            Object {
+              "id": 1,
+              "name": "Cell Wall",
+              "value": "Cell Wall",
+            },
+            Object {
+              "id": 2,
+              "name": "Ribosomes",
+              "value": "Ribosomes",
+            },
+          ],
+          "selected": 1,
+        },
+        Object {
+          "correct": 0,
+          "id": 1,
+          "options": Array [
+            Object {
+              "id": 3,
+              "name": "Cytoplasm",
+              "value": "Cytoplasm",
+            },
+            Object {
+              "id": 4,
+              "name": "Chloroplast",
+              "value": "Chloroplast",
+            },
+          ],
+          "selected": 0,
+        },
+        Object {
+          "correct": 0,
+          "id": 2,
+          "options": Array [
+            Object {
+              "id": 5,
+              "name": "Impermeable membrane",
+              "value": "Impermeable membrane",
+            },
+            Object {
+              "id": 6,
+              "name": "Partially permeable membrane",
+              "value": "Partially permeable membrane",
+            },
+          ],
+          "selected": 0,
+        },
+      ]
+    }
+    resolutionMessage="works"
+    title="An animal cell contains:"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": null,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="snquestion__title"
+        >
+          An animal cell contains:
+        </h1>,
+        Array [
+          <SNToggles
+            changeHandler={[Function]}
+            correct={0}
+            disable={false}
+            id={0}
+            options={
+              Array [
+                Object {
+                  "id": 1,
+                  "name": "Cell Wall",
+                  "value": "Cell Wall",
+                },
+                Object {
+                  "id": 2,
+                  "name": "Ribosomes",
+                  "value": "Ribosomes",
+                },
+              ]
+            }
+            selected={1}
+            switchIndex={0}
+          />,
+          <SNToggles
+            changeHandler={[Function]}
+            correct={0}
+            disable={false}
+            id={1}
+            options={
+              Array [
+                Object {
+                  "id": 3,
+                  "name": "Cytoplasm",
+                  "value": "Cytoplasm",
+                },
+                Object {
+                  "id": 4,
+                  "name": "Chloroplast",
+                  "value": "Chloroplast",
+                },
+              ]
+            }
+            selected={0}
+            switchIndex={1}
+          />,
+          <SNToggles
+            changeHandler={[Function]}
+            correct={0}
+            disable={false}
+            id={2}
+            options={
+              Array [
+                Object {
+                  "id": 5,
+                  "name": "Impermeable membrane",
+                  "value": "Impermeable membrane",
+                },
+                Object {
+                  "id": 6,
+                  "name": "Partially permeable membrane",
+                  "value": "Partially permeable membrane",
+                },
+              ]
+            }
+            selected={0}
+            switchIndex={2}
+          />,
+        ],
+        <p
+          className="snquestion__result"
+        >
+          works
+        </p>,
+      ],
+      "className": "snquestion snquestion--medium",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "An animal cell contains:",
+          "className": "snquestion__title",
+        },
+        "ref": null,
+        "rendered": "An animal cell contains:",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "changeHandler": [Function],
+          "correct": 0,
+          "disable": false,
+          "id": 0,
+          "options": Array [
+            Object {
+              "id": 1,
+              "name": "Cell Wall",
+              "value": "Cell Wall",
+            },
+            Object {
+              "id": 2,
+              "name": "Ribosomes",
+              "value": "Ribosomes",
+            },
+          ],
+          "selected": 1,
+          "switchIndex": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "changeHandler": [Function],
+          "correct": 0,
+          "disable": false,
+          "id": 1,
+          "options": Array [
+            Object {
+              "id": 3,
+              "name": "Cytoplasm",
+              "value": "Cytoplasm",
+            },
+            Object {
+              "id": 4,
+              "name": "Chloroplast",
+              "value": "Chloroplast",
+            },
+          ],
+          "selected": 0,
+          "switchIndex": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "changeHandler": [Function],
+          "correct": 0,
+          "disable": false,
+          "id": 2,
+          "options": Array [
+            Object {
+              "id": 5,
+              "name": "Impermeable membrane",
+              "value": "Impermeable membrane",
+            },
+            Object {
+              "id": 6,
+              "name": "Partially permeable membrane",
+              "value": "Partially permeable membrane",
+            },
+          ],
+          "selected": 0,
+          "switchIndex": 2,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": null,
+        "nodeType": "host",
+        "props": Object {
+          "children": "works",
+          "className": "snquestion__result",
+        },
+        "ref": null,
+        "rendered": "works",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="snquestion__title"
+          >
+            An animal cell contains:
+          </h1>,
+          Array [
+            <SNToggles
+              changeHandler={[Function]}
+              correct={0}
+              disable={false}
+              id={0}
+              options={
+                Array [
+                  Object {
+                    "id": 1,
+                    "name": "Cell Wall",
+                    "value": "Cell Wall",
+                  },
+                  Object {
+                    "id": 2,
+                    "name": "Ribosomes",
+                    "value": "Ribosomes",
+                  },
+                ]
+              }
+              selected={1}
+              switchIndex={0}
+            />,
+            <SNToggles
+              changeHandler={[Function]}
+              correct={0}
+              disable={false}
+              id={1}
+              options={
+                Array [
+                  Object {
+                    "id": 3,
+                    "name": "Cytoplasm",
+                    "value": "Cytoplasm",
+                  },
+                  Object {
+                    "id": 4,
+                    "name": "Chloroplast",
+                    "value": "Chloroplast",
+                  },
+                ]
+              }
+              selected={0}
+              switchIndex={1}
+            />,
+            <SNToggles
+              changeHandler={[Function]}
+              correct={0}
+              disable={false}
+              id={2}
+              options={
+                Array [
+                  Object {
+                    "id": 5,
+                    "name": "Impermeable membrane",
+                    "value": "Impermeable membrane",
+                  },
+                  Object {
+                    "id": 6,
+                    "name": "Partially permeable membrane",
+                    "value": "Partially permeable membrane",
+                  },
+                ]
+              }
+              selected={0}
+              switchIndex={2}
+            />,
+          ],
+          <p
+            className="snquestion__result"
+          >
+            works
+          </p>,
+        ],
+        "className": "snquestion snquestion--medium",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "An animal cell contains:",
+            "className": "snquestion__title",
+          },
+          "ref": null,
+          "rendered": "An animal cell contains:",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "changeHandler": [Function],
+            "correct": 0,
+            "disable": false,
+            "id": 0,
+            "options": Array [
+              Object {
+                "id": 1,
+                "name": "Cell Wall",
+                "value": "Cell Wall",
+              },
+              Object {
+                "id": 2,
+                "name": "Ribosomes",
+                "value": "Ribosomes",
+              },
+            ],
+            "selected": 1,
+            "switchIndex": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "changeHandler": [Function],
+            "correct": 0,
+            "disable": false,
+            "id": 1,
+            "options": Array [
+              Object {
+                "id": 3,
+                "name": "Cytoplasm",
+                "value": "Cytoplasm",
+              },
+              Object {
+                "id": 4,
+                "name": "Chloroplast",
+                "value": "Chloroplast",
+              },
+            ],
+            "selected": 0,
+            "switchIndex": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "changeHandler": [Function],
+            "correct": 0,
+            "disable": false,
+            "id": 2,
+            "options": Array [
+              Object {
+                "id": 5,
+                "name": "Impermeable membrane",
+                "value": "Impermeable membrane",
+              },
+              Object {
+                "id": 6,
+                "name": "Partially permeable membrane",
+                "value": "Partially permeable membrane",
+              },
+            ],
+            "selected": 0,
+            "switchIndex": 2,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "works",
+            "className": "snquestion__result",
+          },
+          "ref": null,
+          "rendered": "works",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
