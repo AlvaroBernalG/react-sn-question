@@ -23,6 +23,7 @@ npm run install react-sn-question --save
 ```js
 import React from 'react';
 import SNQuestion from 'react-sn-question';
+import 'react-sn-question/dist/main.css';
 import questionData from './data'
 
 class App extends React.Component {
