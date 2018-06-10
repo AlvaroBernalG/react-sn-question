@@ -42,7 +42,7 @@ export default class Toggles extends React.Component {
       0
     );
 
-  static reduceQuestion = (questions, { questionIndex, answerIndex }) => [
+  static updateQuestions = (questions, { questionIndex, answerIndex }) => [
     ...questions.slice(0, questionIndex),
     { ...questions[questionIndex], selected: answerIndex },
     ...questions.slice(questionIndex + 1, questions.length)
@@ -51,13 +51,11 @@ export default class Toggles extends React.Component {
   static isQuestionCorrect = questions =>
     questions.every(q => q.selected === q.correct);
 
-  static computeDefaultClasses(classes, nthQuestions) {
-    return [
-      classes[0],
-      ...classes.slice(1, nthQuestions),
-      classes[classes.length - 1]
-    ];
-  }
+  static computeDefaultClasses = (classes, nthQuestions) => [
+    classes[0],
+    ...classes.slice(1, nthQuestions),
+    classes[classes.length - 1]
+  ];
 
   static getDerivedStateFromProps(props, prevState) {
     // if props.classStates is being defined from the parent

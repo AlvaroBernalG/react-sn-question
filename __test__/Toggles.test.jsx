@@ -15,8 +15,8 @@ describe("<Toggles />", () => {
     expect(Toggles.computeScore(mockUpTest.questions)).toBe(2);
   });
 
-  it("reduceQuestion() should correctly update questions.", () => {
-    const updatedQuestions = Toggles.reduceQuestion(mockUpTest.questions, {
+  it("updateQuestions() should correctly update questions.", () => {
+    const updatedQuestions = Toggles.updateQuestions(mockUpTest.questions, {
       questionIndex: 0,
       answerIndex: 0
     });
@@ -24,7 +24,7 @@ describe("<Toggles />", () => {
   });
 
   it("isQuestionCorrect() should return true if all answers are correct.", () => {
-    const updatedQuestions = Toggles.reduceQuestion(mockUpTest.questions, {
+    const updatedQuestions = Toggles.updateQuestions(mockUpTest.questions, {
       questionIndex: 0,
       answerIndex: 0
     });

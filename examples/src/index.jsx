@@ -16,7 +16,7 @@ class App extends React.Component {
   changeHandler(_, answerIndex, questionIndex) {
     const { questions } = this.state;
     this.setState({
-      questions: Toggles.reduceQuestion(questions, {
+      questions: Toggles.updateQuestions(questions, {
         answerIndex,
         questionIndex
       })
