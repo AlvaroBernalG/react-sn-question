@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import SNToggles from "../src/";
+import SNToggles from "../src/SNToggles";
 import { mockUpTest } from "./data";
 
 describe("<SNToggles />", () => {
@@ -11,7 +11,6 @@ describe("<SNToggles />", () => {
       <SNToggles
         {...question}
         key={1}
-        options={question.answers}
         disable={false}
         changeHandler={(...args) => console.log(...args)}
         switchIndex={1}
