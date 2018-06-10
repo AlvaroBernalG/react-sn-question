@@ -1,22 +1,22 @@
 import React from "react";
 import { mount } from "enzyme";
-import Toggles from "../src/";
+import SNQuestion from "../src/";
 import { mockUpTest } from "./data";
 
-const wrapper = props => <Toggles {...props} />;
+const wrapper = props => <SNQuestion {...props} />;
 
-describe("<Toggles />", () => {
+describe("<SNQuestion />", () => {
   it("should correctly mount the component.", () => {
     const enzWrapper = mount(wrapper());
-    expect(enzWrapper.find(".toggles").length).toBe(1);
+    expect(enzWrapper.find(".snquestion").length).toBe(1);
   });
 
   it("computeScore() should correctly compute the score.", () => {
-    expect(Toggles.computeScore(mockUpTest.questions)).toBe(2);
+    expect(SNQuestion.computeScore(mockUpTest.questions)).toBe(2);
   });
 
   it("updateQuestions() should correctly update questions.", () => {
-    const updatedQuestions = Toggles.updateQuestions(mockUpTest.questions, {
+    const updatedQuestions = SNQuestion.updateQuestions(mockUpTest.questions, {
       questionIndex: 0,
       answerIndex: 0
     });
@@ -24,11 +24,11 @@ describe("<Toggles />", () => {
   });
 
   it("isQuestionCorrect() should return true if all answers are correct.", () => {
-    const updatedQuestions = Toggles.updateQuestions(mockUpTest.questions, {
+    const updatedQuestions = SNQuestion.updateQuestions(mockUpTest.questions, {
       questionIndex: 0,
       answerIndex: 0
     });
-    expect(Toggles.isQuestionCorrect(updatedQuestions)).toBe(true);
+    expect(SNQuestion.isQuestionCorrect(updatedQuestions)).toBe(true);
   });
 
   it("should correctly render the class states.", () => {
@@ -37,14 +37,14 @@ describe("<Toggles />", () => {
     expect(enzwrapper.state("classStates").join("")).toBe(
       ["one", "two", "three"].join("")
     );
-    expect(enzwrapper.find(".toggles--one").length).toBe(1);
+    expect(enzwrapper.find(".snquestion--one").length).toBe(1);
   });
 
   it("should correctly render the title / footer.", () => {
     const enzwrapper = mount(wrapper());
     enzwrapper.setProps({ resolutionMessage: "works" });
-    expect(enzwrapper.find(".toggles__result").text()).toBe("works");
-    enzwrapper.setProps({ questionTitle: "works" });
-    expect(enzwrapper.find(".toggles__title").text()).toBe("works");
+    expect(enzwrapper.find(".snquestion__result").text()).toBe("works");
+    enzwrapper.setProps({ title: "works" });
+    expect(enzwrapper.find(".snquestion__title").text()).toBe("works");
   });
 });

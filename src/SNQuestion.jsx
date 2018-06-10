@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Toggles.scss";
-import TogglesSwitch from "./TogglesSwitch";
+import "./SNQuestion.scss";
+import SNToggles from "./SNToggles";
 
-export default class Toggles extends React.Component {
+export default class SNQuestion extends React.Component {
   static propTypes = {
     onChange: PropTypes.func,
     classStates: PropTypes.arrayOf(PropTypes.string),
     disable: PropTypes.bool,
-    questionTitle: PropTypes.string,
+    title: PropTypes.string,
     resolutionMessage: PropTypes.string,
     questions: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number,
         correct: PropTypes.number,
         selected: PropTypes.number,
-        answers: PropTypes.arrayOf(
+        options: PropTypes.arrayOf(
           PropTypes.shape({
             name: PropTypes.string,
             value: PropTypes.string
@@ -29,7 +29,7 @@ export default class Toggles extends React.Component {
     onChange: undefined,
     classStates: undefined,
     disable: false,
-    questionTitle: "",
+    title: "",
     questions: [],
     resolutionMessage: ""
   };
@@ -69,8 +69,8 @@ export default class Toggles extends React.Component {
     // been initialized:
     if (prevState.classStates.length === 0) {
       return {
-        classStates: Toggles.computeDefaultClasses(
-          Toggles.defaultClassStates,
+        classStates: SNQuestion.computeDefaultClasses(
+          SNQuestion.defaultClassStates,
           props.questions.length
         )
       };
@@ -83,9 +83,9 @@ export default class Toggles extends React.Component {
   };
 
   getMainWrapperClasses(questions) {
-    const computedScore = Toggles.computeScore(questions);
+    const computedScore = SNQuestion.computeScore(questions);
     const finalClass = this.state.classStates[computedScore];
-    const classes = ["toggles", `toggles--${finalClass}`].join(" ");
+    const classes = ["snquestion", `snquestion--${finalClass}`].join(" ");
     return classes;
   }
 
@@ -96,23 +96,22 @@ export default class Toggles extends React.Component {
   }
 
   render() {
-    const { questions, questionTitle, disable, resolutionMessage } = this.props;
+    const { questions, title, disable, resolutionMessage } = this.props;
     return (
       <div className={this.getMainWrapperClasses(questions)}>
-        <h1 className="toggles__title">{questionTitle}</h1>
+        <h1 className="snquestion__title">{title}</h1>
         {questions.map((question, index) => (
-          <TogglesSwitch
+          <SNToggles
             {...question}
             key={question.id}
             disable={disable}
-            options={question.answers}
             changeHandler={(value, answerIndex, questionIndex) =>
               this.changeHandler(value, answerIndex, questionIndex)
             }
             switchIndex={index}
           />
         ))}
-        <p className="toggles__result">{resolutionMessage}</p>
+        <p className="snquestion__result">{resolutionMessage}</p>
       </div>
     );
   }

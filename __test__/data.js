@@ -1,12 +1,12 @@
 export const mockUpTest = {
   id: 33,
-  questionTitle: "An animal cell contains:",
+  title: "An animal cell contains:",
   questions: [
     {
       id: 0,
       correct: 0,
       selected: 1,
-      answers: [
+      options: [
         {
           name: "Cell Wall",
           value: "Cell Wall",
@@ -23,7 +23,7 @@ export const mockUpTest = {
       id: 1,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Cytoplasm",
           value: "Cytoplasm",
@@ -40,7 +40,7 @@ export const mockUpTest = {
       id: 2,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Impermeable membrane",
           value: "Impermeable membrane",

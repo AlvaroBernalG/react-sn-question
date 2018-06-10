@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./Example.scss";
-import Toggles from "../../src/";
+import SNQuestion from "../../src/";
 import { quiz } from "../src/data";
 
 class App extends React.Component {
@@ -9,14 +9,16 @@ class App extends React.Component {
 
   getResolutionMessage() {
     return `The answer is ${
-      Toggles.isQuestionCorrect(this.state.questions) ? "correct" : "incorrect"
+      SNQuestion.isQuestionCorrect(this.state.questions)
+        ? "correct"
+        : "incorrect"
     }`;
   }
 
   changeHandler(_, answerIndex, questionIndex) {
     const { questions } = this.state;
     this.setState({
-      questions: Toggles.updateQuestions(questions, {
+      questions: SNQuestion.updateQuestions(questions, {
         answerIndex,
         questionIndex
       })
@@ -28,9 +30,9 @@ class App extends React.Component {
     const classes = undefined;
     return (
       <div className="demo">
-        <Toggles
+        <SNQuestion
           {...this.state}
-          disable={Toggles.isQuestionCorrect(this.state.questions)}
+          disable={SNQuestion.isQuestionCorrect(this.state.questions)}
           resolutionMessage={this.getResolutionMessage()}
           onChange={(...args) => this.changeHandler(...args)}
           classStates={classes}

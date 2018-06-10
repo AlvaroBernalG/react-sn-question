@@ -1,1 +1,1 @@
-export { default } from "./Toggles";
+export { default } from "./SNQuestion";

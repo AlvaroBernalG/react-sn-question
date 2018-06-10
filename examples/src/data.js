@@ -1,12 +1,12 @@
 export const quiz = {
   id: 33,
-  questionTitle: "An animal cell contains:",
+  title: "An animal cell contains:",
   questions: [
     {
       id: 0,
       correct: 0,
       selected: 1,
-      answers: [
+      options: [
         {
           name: "Ribosomes",
           value: "Ribosomes",
@@ -16,6 +16,11 @@ export const quiz = {
           name: "Cell Wall",
           value: "Cell Wall",
           id: 1
+        },
+        {
+          name: "Vacuole",
+          value: "Vacuole",
+          id: 18
         }
       ]
     },
@@ -23,7 +28,7 @@ export const quiz = {
       id: 1,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Cytoplasm",
           value: "Cytoplasm",
@@ -40,7 +45,7 @@ export const quiz = {
       id: 2,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Partially permeable membrane",
           value: "Partially permeable membrane",
@@ -58,13 +63,13 @@ export const quiz = {
 
 export const quiz2 = {
   id: 33,
-  questionTitle: "Features of Elizabethan relationships and marriage",
+  title: "Features of Elizabethan relationships and marriage",
   questions: [
     {
       id: 3,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Girls could get married at 12",
           value: "Girls could get married at 12",
@@ -81,7 +86,7 @@ export const quiz2 = {
       id: 4,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Children could choose to marry whoever they wished",
           value: "Children could choose to marry whoever they wished",
@@ -98,7 +103,7 @@ export const quiz2 = {
       id: 5,
       correct: 1,
       selected: 1,
-      answers: [
+      options: [
         {
           name: "Children could go out whenever they wanted",
           value: "Children could go out whenever they wanted",
@@ -115,7 +120,7 @@ export const quiz2 = {
       id: 6,
       correct: 1,
       selected: 1,
-      answers: [
+      options: [
         {
           name: "dos",
           value: "dos",
@@ -138,13 +143,13 @@ export const quiz2 = {
 
 export const test = {
   id: 33,
-  questionTitle: "An animal cell contains:",
+  title: "An animal cell contains:",
   questions: [
     {
       id: 0,
       correct: 0,
       selected: 1,
-      answers: [
+      options: [
         {
           name: "Cell Wall",
           value: "Cell Wall",
@@ -161,7 +166,7 @@ export const test = {
       id: 1,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Cytoplasm",
           value: "Cytoplasm",
@@ -178,7 +183,7 @@ export const test = {
       id: 2,
       correct: 0,
       selected: 0,
-      answers: [
+      options: [
         {
           name: "Impermeable membrane",
           value: "Impermeable membrane",

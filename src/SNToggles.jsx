@@ -3,15 +3,17 @@ import PropTypes from "prop-types";
 import Switch, { State } from "react-switchable";
 import "react-switchable/dist/main.css";
 
-const TogglesSwitch = ({
+const SNToggles = ({
   id,
   selected,
   options,
   switchIndex,
   disable,
-  changeHandler
+  changeHandler,
+  ...rest
 }) => (
   <Switch
+    {...rest}
     key={id}
     disable={disable}
     onValueChange={(value, answerIndex) =>
@@ -26,7 +28,7 @@ const TogglesSwitch = ({
   </Switch>
 );
 
-TogglesSwitch.propTypes = {
+SNToggles.propTypes = {
   id: PropTypes.number.isRequired,
   selected: PropTypes.number.isRequired,
   switchIndex: PropTypes.number.isRequired,
@@ -40,9 +42,9 @@ TogglesSwitch.propTypes = {
   changeHandler: PropTypes.func
 };
 
-TogglesSwitch.defaultProps = {
+SNToggles.defaultProps = {
   disable: false,
   changeHandler: undefined
 };
 
-export default TogglesSwitch;
+export default SNToggles;

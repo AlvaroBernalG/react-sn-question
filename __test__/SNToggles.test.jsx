@@ -1,14 +1,14 @@
 import React from "react";
 import { mount } from "enzyme";
-import TogglesSwitch from "../src/TogglesSwitch";
+import SNToggles from "../src/";
 import { mockUpTest } from "./data";
 
-describe("<Toggles />", () => {
+describe("<SNToggles />", () => {
   it("should mount.", () => {
     const question = mockUpTest.questions[0];
 
     const wrapper = mount(
-      <TogglesSwitch
+      <SNToggles
         {...question}
         key={1}
         options={question.answers}

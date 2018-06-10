@@ -7,7 +7,7 @@ $state-colours: (
 );
 
 @mixin state-colours-mixin($name, $start-colour, $end-colour) {
-  &.toggles--#{$name} {
+  &.snquestion--#{$name} {
     background-image: linear-gradient($start-colour, $end-colour);
     box-shadow: 0 2px 12px 6px lighten($start-colour, 20%);
    .abg-switch__state--on {
@@ -19,7 +19,7 @@ $state-colours: (
   }
 }
 
-.toggles {
+.snquestion {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,11 +40,11 @@ $state-colours: (
     text-align: center;
   }
 
-  .toggles__title {
+  .snquestion__title {
     font-size: 17px;
   }
 
-  .toggles__result {
+  .snquestion__result {
     font-weight: 700;
   }
 
