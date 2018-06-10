@@ -5,33 +5,30 @@ import SNToggles from "./SNToggles";
 
 export default class SNQuestion extends React.Component {
   static propTypes = {
-    onChange: PropTypes.func,
-    classStates: PropTypes.arrayOf(PropTypes.string),
-    disable: PropTypes.bool,
-    title: PropTypes.string,
-    resolutionMessage: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    resolutionMessage: PropTypes.string.isRequired,
     questions: PropTypes.arrayOf(
       PropTypes.shape({
-        id: PropTypes.number,
-        correct: PropTypes.number,
-        selected: PropTypes.number,
+        id: PropTypes.number.isRequired,
+        correct: PropTypes.number.isRequired,
         options: PropTypes.arrayOf(
           PropTypes.shape({
-            name: PropTypes.string,
-            value: PropTypes.string
+            name: PropTypes.string.isRequired,
+            value: PropTypes.string.isRequired
           })
-        )
+        ),
+        selected: PropTypes.number
       })
-    )
+    ).isRequired,
+    onChange: PropTypes.func,
+    classStates: PropTypes.arrayOf(PropTypes.string),
+    disable: PropTypes.bool
   };
 
   static defaultProps = {
     onChange: undefined,
     classStates: undefined,
-    disable: false,
-    title: "",
-    questions: [],
-    resolutionMessage: ""
+    disable: false
   };
 
   static defaultClassStates = ["failure", "hot", "medium", "almost", "success"];

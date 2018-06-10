@@ -3,11 +3,13 @@ import { mount } from "enzyme";
 import SNQuestion from "../src/";
 import { mockUpTest } from "./data";
 
+const defaultProps = { ...mockUpTest,  resolutionMessage: "works" } 
+
 const wrapper = props => <SNQuestion {...props} />;
 
 describe("<SNQuestion />", () => {
   it("should correctly mount the component.", () => {
-    const enzWrapper = mount(wrapper());
+    const enzWrapper = mount(wrapper(defaultProps));
     expect(enzWrapper.find(".snquestion").length).toBe(1);
   });
 
@@ -32,16 +34,17 @@ describe("<SNQuestion />", () => {
   });
 
   it("should correctly render the class states.", () => {
-    const enzwrapper = mount(wrapper());
+    const enzwrapper = mount(wrapper(defaultProps));
     enzwrapper.setProps({ classStates: ["one", "two", "three"] });
     expect(enzwrapper.state("classStates").join("")).toBe(
       ["one", "two", "three"].join("")
     );
-    expect(enzwrapper.find(".snquestion--one").length).toBe(1);
+    
+    expect(enzwrapper.find(".snquestion--three").length).toBe(1);
   });
 
   it("should correctly render the title / footer.", () => {
-    const enzwrapper = mount(wrapper());
+    const enzwrapper = mount(wrapper(defaultProps));
     enzwrapper.setProps({ resolutionMessage: "works" });
     expect(enzwrapper.find(".snquestion__result").text()).toBe("works");
     enzwrapper.setProps({ title: "works" });
