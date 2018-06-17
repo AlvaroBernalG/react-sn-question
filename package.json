@@ -5,15 +5,13 @@
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "rm -rf dist/ && npm run build",
-    "build:example": "babel src -d dist",
-    "build": "webpack --config './webpack.config.js'",
-    "examples:dev": "webpack-dev-server --mode development",
+    "build": "webpack",
     "format": "prettier --write '**/*.{js,jsx,json}'",
-    "lint": "eslint --ext .js,.jsx src/ examples/src",
+    "lint": "eslint --ext .js,.jsx src/",
     "test": "jest",
     "test:watch": "jest --watch",
     "analyze-bundle":
-      "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json examples/dist -s gzip"
+      "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json -s gzip"
   },
   "pre-commit": ["format", "lint", "test"],
   "repository": {
@@ -56,15 +54,14 @@
     "style-loader": "^0.20.3",
     "webpack": "^4.5.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-cli": "^2.0.14",
-    "webpack-dev-server": "^3.1.2"
+    "webpack-cli": "^2.0.14"
   },
   "keywords": ["toggle", "question", "quiz", "switchable"],
   "dependencies": {
     "prop-types": "^15.6.0",
     "react-switchable": "^0.2.0"
   },
-  "jest" : {
+  "jest": {
     "verbose": true,
     "collectCoverage": true,
     "coverageDirectory": "./coverage",
@@ -75,7 +72,8 @@
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)":
+        "<rootDir>/config/jest/fileTransform.js"
     }
   }
 }

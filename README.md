@@ -44,6 +44,10 @@ class App extends React.Component {
 }
 ```
 
+## Live demo
+
+[![Try it online](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ypz2l8ky11)
+
 ## API
 
 Prop | Type | Required | Default | Description 

@@ -44,10 +44,5 @@ module.exports = {
       // both options are optional
       filename: "[name].css"
     })
-  ],
-
-  devServer: {
-    contentBase: path.join(__dirname, "examples/dist"),
-    port: 8000
-  }
+  ]
 };
