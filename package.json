@@ -1,6 +1,6 @@
 {
   "name": "react-sn-question",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A component to ask questions.",
   "main": "dist/index.js",
   "scripts": {
@@ -13,9 +13,9 @@
     "analyze-bundle":
       "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json -s gzip"
   },
-  "files": {
+  "files": [
     "dist/*"
-  },
+  ],
   "pre-commit": ["format", "lint", "test"],
   "repository": {
     "type": "git"
