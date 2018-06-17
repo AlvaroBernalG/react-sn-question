@@ -13,6 +13,9 @@
     "analyze-bundle":
       "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json -s gzip"
   },
+  "files": {
+    "dist/*"
+  },
   "pre-commit": ["format", "lint", "test"],
   "repository": {
     "type": "git"
