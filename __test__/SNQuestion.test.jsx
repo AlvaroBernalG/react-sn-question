@@ -1,9 +1,13 @@
+import "raf/polyfill";
 import React from "react";
-import { mount, shallow } from "enzyme";
+import Enzyme, { mount } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 import SNQuestion from "../src/";
 import { mockUpTest } from "./data";
 
-const defaultProps = { ...mockUpTest,  resolutionMessage: "works" } 
+Enzyme.configure({ adapter: new Adapter() });
+
+const defaultProps = { ...mockUpTest, resolutionMessage: "works" };
 
 const wrapper = props => <SNQuestion {...props} />;
 
@@ -14,7 +18,7 @@ describe("<SNQuestion />", () => {
   });
 
   it("should match the snapshot.", () => {
-    const enzWrapper = shallow(wrapper(defaultProps));
+    const enzWrapper = mount(wrapper(defaultProps));
     expect(enzWrapper).toMatchSnapshot();
   });
 
@@ -44,7 +48,7 @@ describe("<SNQuestion />", () => {
     expect(enzwrapper.state("classStates").join("")).toBe(
       ["one", "two", "three"].join("")
     );
-    
+
     expect(enzwrapper.find(".snquestion--three").length).toBe(1);
   });
 

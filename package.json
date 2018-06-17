@@ -6,14 +6,14 @@
   "scripts": {
     "prepublish": "rm -rf dist/ && npm run build",
     "build:example": "babel src -d dist",
-    "build": "webpack --config './webpack.config.dist.js'",
+    "build": "webpack --config './webpack.config.js'",
     "examples:dev": "webpack-dev-server --mode development",
     "format": "prettier --write '**/*.{js,jsx,json}'",
     "lint": "eslint --ext .js,.jsx src/ examples/src",
     "test": "jest",
     "test:watch": "jest --watch",
     "analyze-bundle":
-      "webpack --config webpack.config.dist.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json examples/dist -s gzip"
+      "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json examples/dist -s gzip"
   },
   "pre-commit": ["format", "lint", "test"],
   "repository": {
@@ -63,5 +63,19 @@
   "dependencies": {
     "prop-types": "^15.6.0",
     "react-switchable": "^0.2.0"
+  },
+  "jest" : {
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageDirectory": "./coverage",
+    "coveragePathIgnorePatterns": ["./node_modules", "./jest.setup.js"],
+    "moduleNameMapper": {
+      "\\.(css|sass|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    }
   }
 }

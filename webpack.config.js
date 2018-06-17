@@ -1,12 +1,14 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, "examples/src/index.jsx"),
+  entry: path.join(__dirname, "src/index.jsx"),
   output: {
-    path: path.join(__dirname, "examples/dist"),
-    filename: "bundle.js"
+    path: path.join(__dirname, "dist"),
+    filename: "index.js",
+    libraryTarget: "commonjs2"
   },
+  mode: "production",
   module: {
     rules: [
       {
@@ -16,18 +18,34 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "examples/src/index.html")
-    })
-  ],
   resolve: {
     extensions: [".js", ".jsx"]
   },
+  externals: {
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "React",
+      root: "React"
+    },
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+      amd: "ReactDOM"
+    }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css"
+    })
+  ],
+
   devServer: {
     contentBase: path.join(__dirname, "examples/dist"),
     port: 8000

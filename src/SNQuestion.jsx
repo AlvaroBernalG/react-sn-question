@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Switch, { State } from "react-switchable";
+import "react-switchable/dist/main.css";
 import "./SNQuestion.scss";
-import SNToggles from "./SNToggles";
 
 export default class SNQuestion extends React.Component {
   static propTypes = {
@@ -82,7 +83,9 @@ export default class SNQuestion extends React.Component {
   getMainWrapperClasses(questions) {
     const computedScore = SNQuestion.computeScore(questions);
     const finalClass = this.state.classStates[computedScore];
-    const classes = ["snquestion", `snquestion--${finalClass}`].join(" ");
+    const classes = ["snquestion", `snquestion--${finalClass}`]
+      .join(" ")
+      .trim();
     return classes;
   }
 
@@ -97,16 +100,24 @@ export default class SNQuestion extends React.Component {
     return (
       <div className={this.getMainWrapperClasses(questions)}>
         <h1 className="snquestion__title">{title}</h1>
-        {questions.map((question, index) => (
-          <SNToggles
-            {...question}
+        {questions.map((question, answerIndex) => (
+          <Switch
             key={question.id}
             disable={disable}
-            changeHandler={(value, answerIndex, questionIndex) =>
-              this.changeHandler(value, answerIndex, questionIndex)
+            onValueChange={(value, questionIndex) =>
+              this.changeHandler(value, questionIndex, answerIndex)
             }
-            switchIndex={index}
-          />
+          >
+            {question.options.map((option, optionIndex) => (
+              <State
+                active={question.selected === optionIndex}
+                key={option.id}
+                value={option.name}
+              >
+                {option.value}
+              </State>
+            ))}
+          </Switch>
         ))}
         <p className="snquestion__result">{resolutionMessage}</p>
       </div>
