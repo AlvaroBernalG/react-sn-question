@@ -27,11 +27,16 @@ describe("<SNQuestion />", () => {
   });
 
   it("updateQuestions() should correctly update questions.", () => {
-    const updatedQuestions = SNQuestion.updateQuestions(mockUpTest.questions, {
+    let updatedQuestions = SNQuestion.updateQuestions(mockUpTest.questions, {
       questionIndex: 0,
       answerIndex: 0
     });
     expect(updatedQuestions[0].selected).toBe(0);
+    updatedQuestions = SNQuestion.updateQuestions(mockUpTest.questions, {
+      questionIndex: 1,
+      answerIndex: 1
+    });
+    expect(updatedQuestions[1].selected).toBe(1);
   });
 
   it("isQuestionCorrect() should return true if all answers are correct.", () => {

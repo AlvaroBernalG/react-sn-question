@@ -40,11 +40,10 @@ export default class SNQuestion extends React.Component {
       0
     );
 
-  static updateQuestions = (questions, { questionIndex, answerIndex }) => [
-    ...questions.slice(0, questionIndex),
-    { ...questions[questionIndex], selected: answerIndex },
-    ...questions.slice(questionIndex + 1, questions.length)
-  ];
+  static updateQuestions = (questions, { questionIndex, answerIndex }) => 
+    questions.map((question, index) => 
+      questionIndex === index ? { ...question, selected: answerIndex} : question
+    );
 
   static isQuestionCorrect = questions =>
     questions.every(q => q.selected === q.correct);
