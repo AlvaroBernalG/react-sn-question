@@ -24,20 +24,23 @@ npm run install react-sn-question --save
 import React from 'react';
 import SNQuestion from 'react-sn-question';
 import 'react-sn-question/dist/main.css';
-import questionData from './data'
+import questions from './questions'
 
 class App extends React.Component {
 
-  state = questionData
+  state = {
+    questions: questions
+  }
 
   render() {
     const isQuestionCorrect = SNQuestion.isQuestionCorrect(this.state.questions)
     return (
       <SNQuestion
-        {...this.state}
+        title={"An animal cell contains:"}
+        resolutionMessage={`The selected value is ${isQuestionCorrect ? 'correct': 'incorrect'}`}
+        onChange={(value) => checkNewValue(value)}
         disable={isQuestionCorrect}
-        resolutionMessage={ isQuestionCorrect ? 'Awesome!': 'Keep trying!'}
-        onChange={(...args) => console.log('You have just toggled a button!!')}
+        questions={this.state.questions}
       />
     )
   }
@@ -52,10 +55,10 @@ class App extends React.Component {
 
 Prop | Type | Required | Default | Description 
 -----|------|----------|---------|-------------
-`title` | string | Yes |  | The question title
+`title` | string | Yes |  | The title of the question.
 `resolutionMessage` | string | Yes |  | Message to be displayed at the bottom of the container which represents the status of the question.
-`questions` | Array | Yes |  | Contains the questions data
-`onChange`| function | No |  undefined | Fires whenever a button is toggled
+`questions` | Array | Yes |  | Contains the questions data.
+`onChange`| function | No |  undefined | Fires whenever a button is toggled.
 `disable` | boolean | No | false | Disables the SNQuestion.
 
 
