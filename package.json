@@ -13,9 +13,7 @@
     "analyze-bundle":
       "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json -s gzip"
   },
-  "files": [
-    "dist/*"
-  ],
+  "files": ["dist/*"],
   "pre-commit": ["format", "lint", "test"],
   "repository": {
     "type": "git"
@@ -48,6 +46,7 @@
     "jest": "^22.4.3",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.9.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
