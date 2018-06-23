@@ -22,7 +22,7 @@ export default class SNQuestion extends React.Component {
       })
     ).isRequired,
     onChange: PropTypes.func,
-    classStates: PropTypes.arrayOf(PropTypes.string),
+    classStates: PropTypes.arrayOf(PropTypes.string), // eslint-disable-line react/no-unused-prop-types
     disable: PropTypes.bool
   };
 
@@ -40,9 +40,12 @@ export default class SNQuestion extends React.Component {
       0
     );
 
-  static updateQuestions = (questions, { questionIndex, answerIndex }) => 
-    questions.map((question, index) => 
-      questionIndex === index ? { ...question, selected: answerIndex} : question
+  static updateQuestions = (questions, { questionIndex, answerIndex }) =>
+    questions.map(
+      (question, index) =>
+        questionIndex === index
+          ? { ...question, selected: answerIndex }
+          : question
     );
 
   static isQuestionCorrect = questions =>
