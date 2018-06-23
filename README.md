@@ -4,6 +4,7 @@
 )](https://badge.fury.io/js/react-sn-question)
 [![npm
 version](https://badge.fury.io/js/react-sn-question.svg)](https://badge.fury.io/js/react-sn-question)
+[![dependencies Status](https://david-dm.org/alvarobernalG/react-sn-question/status.svg)](https://david-dm.org/alvarobernalG/react-sn-question)
 
 
 <p align="center">
