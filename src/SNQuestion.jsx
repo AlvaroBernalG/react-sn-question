@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Switch, { State } from "react-switchable";
+import Switch, { Item } from "react-switchable";
 import "react-switchable/dist/main.css";
 import "./SNQuestion.scss";
 
@@ -104,20 +104,21 @@ export default class SNQuestion extends React.Component {
         <h1 className="snquestion__title">{title}</h1>
         {questions.map((question, answerIndex) => (
           <Switch
+            name={question.id}
             key={question.id}
             disable={disable}
-            onValueChange={(value, questionIndex) =>
+            onItemSelected={(value, questionIndex) =>
               this.changeHandler(value, questionIndex, answerIndex)
             }
           >
             {question.options.map((option, optionIndex) => (
-              <State
+              <Item
                 active={question.selected === optionIndex}
                 key={option.id}
                 value={option.name}
               >
                 {option.value}
-              </State>
+              </Item>
             ))}
           </Switch>
         ))}
