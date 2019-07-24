@@ -19,8 +19,7 @@ version](https://badge.fury.io/js/react-sn-question.svg)](https://badge.fury.io/
 npm run install react-sn-question --save
 ```
 
-## Usage
-
+## Usage 
 ```js
 import React from 'react';
 import SNQuestion from 'react-sn-question';
@@ -65,37 +64,23 @@ Prop | Type | Required | Default | Description
 
 ```typescript
 interface SNQuestion {
-
   title: string,
-
   resolutionMessage: string,
-
   questions: Array<Question>
-
   onChange?: (value: string, answerIndex: number, questionIndex: number) => void,
-
   disable?: bool,
-
 }
 
 interface Question {
-
   id: string,
-
   correct: number,
-
   selected: number,
-
   options: Array<Option>,
-
 }
 
 interface Option {
-
   name: string,
-
   value: string
-
 }
 ```
 
