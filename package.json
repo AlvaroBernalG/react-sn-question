@@ -3,18 +3,18 @@
   "version": "0.1.2",
   "description": "A react component to easily create a toggleable question.",
   "main": "dist/index.js",
-  "scripts": {
+  "script": {
     "prepublish": "rm -rf dist/ && npm run build",
-    "build": "webpack",
+    "build": "env ENV=PROD webpack",
     "format": "prettier --write '**/*.{js,jsx,json}'",
-    "lint": "eslint --ext .js,.jsx src/",
+    "examples:dev": "webpack-dev-server --mode development",
     "test": "jest",
     "test:watch": "jest --watch",
-    "analyze-bundle":
-      "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json -s gzip"
+    "analyze-bundle": "webpack --config webpack.config.js -p --profile --json > stats.json && webpack-bundle-analyzer stats.json -s gzip"
   },
-  "files": ["dist/*"],
-  "pre-commit": ["format", "lint", "test"],
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/AlvaroBernalG/react-sn-question"
@@ -25,11 +25,12 @@
     "react-dom": "^15.3.0 || ^16.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.1",
     "babel-jest": "^23.0.1",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -41,7 +42,6 @@
     "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.12.0",
-    "pre-commit": "^1.2.2",
     "prettier": "^1.9.2",
     "prop-types": "^15.6.0",
     "react": "^16.4.0",
@@ -49,28 +49,35 @@
     "react-test-renderer": "^16.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.20.3",
-    "webpack": "^4.5.0",
+    "webpack": "^4.39.1",
     "webpack-bundle-analyzer": "^3.3.2",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.0.0"
   },
-  "keywords": ["toggle", "question", "quiz", "switchable"],
+  "keywords": [
+    "toggle",
+    "question",
+    "quiz",
+    "switchable"
+  ],
   "dependencies": {
-    "prop-types": "^15.6.0",
     "react-switchable": "^0.4.8"
   },
   "jest": {
     "verbose": true,
     "collectCoverage": true,
     "coverageDirectory": "./coverage",
-    "coveragePathIgnorePatterns": ["./node_modules", "./jest.setup.js"],
+    "coveragePathIgnorePatterns": [
+      "./node_modules",
+      "./jest.setup.js"
+    ],
     "moduleNameMapper": {
       "\\.(css|sass|less)$": "<rootDir>/__mocks__/styleMock.js"
     },
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)":
-        "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     }
   }
 }
