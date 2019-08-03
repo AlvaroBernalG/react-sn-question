@@ -107,9 +107,11 @@ export default class SNQuestion extends React.Component {
             name={question.id}
             key={question.id}
             disable={disable}
-            onItemSelected={(value, questionIndex) =>
-              this.changeHandler(value, questionIndex, answerIndex)
-            }
+            onItemSelected={(itemIndex) =>{
+              const question = questions[answerIndex];
+              const value = question.options[itemIndex].value;
+              this.changeHandler(value, itemIndex, answerIndex);
+            }}
           >
             {question.options.map((option, optionIndex) => (
               <Item
